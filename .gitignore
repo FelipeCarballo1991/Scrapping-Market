@@ -193,5 +193,11 @@ cython_debug/
 .cursorignore
 .cursorindexingignore
 
+
+
+
 # Ignorar carpeta de datos
+logs/
 data/
+
+notebooks/
