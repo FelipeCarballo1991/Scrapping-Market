@@ -274,7 +274,112 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/tomate-perit-xkg/_/R-00000683-00000683-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
                 }
-    }
+    },             
+        "banana": {
+        "nombre": "Banana",        
+        "unidad": "KG",        
+        "categoria": "Fruta",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/banana-cavendish-x-kg/_/R-00000446-00000446-200?Dy=1",
+                }
+    },             
+        "naranja_jugo": {
+        "nombre": "Naranja Jugo",        
+        "unidad": "KG",        
+        "categoria": "Fruta",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/naranja-jugo-xkg/_/R-00061005-00061005-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
+                }
+    },                 
+        "uva_red_glove": {
+        "nombre": "Uva Red Glove",        
+        "unidad": "KG",        
+        "categoria": "Fruta",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/uva-red-globe-xkg/_/R-00000861-00000861-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
+                }
+    },                     
+        "manzana_roja": {
+        "nombre": "Manzana Roja",        
+        "unidad": "KG",        
+        "categoria": "Fruta",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/manzana-comercial-x-kg/_/R-00061002-00061002-200?Dy=1",
+                }
+    },                     
+        "manzana_roja_elegida": {
+        "nombre": "Manzana Elegida",        
+        "unidad": "KG",        
+        "categoria": "Fruta",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/manzana-red-elegida-x-kg/_/R-00000528-00000528-200?Dy=1",
+                }
+    },                       
+        "manzana_verde": {
+        "nombre": "Manzana Verde",        
+        "unidad": "KG",        
+        "categoria": "Fruta",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/manzana-g-smith-xkg/_/R-00000527-00000527-200?Dy=1",
+                }
+    },                             
+        "mandarina_criolla": {
+        "nombre": "Mandarina Criolla",        
+        "unidad": "KG",        
+        "categoria": "Fruta",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/mandarina-criolla-xkg/_/R-00000501-00000501-200?Dy=1",
+                }
+    },                           
+        "mandarina_nova": {
+        "nombre": "Mandarina Nova",        
+        "unidad": "KG",        
+        "categoria": "Fruta",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/mandarina-nova-x-kg/_/R-00000204-00000204-200?Dy=1",
+                }
+    },                      
+        "limon": {
+        "nombre": "Limon",        
+        "unidad": "KG",        
+        "categoria": "Fruta",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/limon-comercia-xkg/_/R-00061007-00061007-200?Dy=1",
+                }
+    },                         
+        "kiwi": {
+        "nombre": "Kiwi",        
+        "unidad": "KG",        
+        "categoria": "Fruta",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/kiwi-selecci%C3%B3n-x-kg/_/R-00000496-00000496-200?Dy=1",
+                }
+    },                             
+        "arandanos_solimeno": {
+        "nombre": "Arandanos Solimeno",        
+        "unidad": "GR",        
+        "categoria": "Fruta",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/frutas-congeladas-ar%C3%A1ndanos-solimeno-500g/_/R-00566036-00566036-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
+                }
+    },                                
+        "arandanos_karinat": {
+        "nombre": "Arandanos Karinat",        
+        "unidad": "GR",        
+        "categoria": "Fruta",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/frutas-arandanos-karinat-doy-300-grm/_/R-00502889-00502889-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
+                }
+    },                                
+        "arandanos_quillen": {
+        "nombre": "Arandanos Quillen",        
+        "unidad": "GR",        
+        "categoria": "Fruta",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/frutas-congeladas-ar%C3%A1ndanos-quillen-400g/_/R-00604305-00604305-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
+                }
+    },                 
+                
 
 
 

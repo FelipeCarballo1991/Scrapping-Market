@@ -9,8 +9,8 @@ from config.urls import URLS,FECHA,URLS_DEBUG
 
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-CSV_PATH = os.path.join(BASE_DIR, "..", "data", "processed", f"Precios_{FECHA}.csv")
-PARQUET_PATH = os.path.join(BASE_DIR, "..", "data", "processed", f"Precios_{FECHA}.parquet")
+CSV_PATH = os.path.join(BASE_DIR, "..", "data", "raw", f"Precios_{FECHA}.csv")
+PARQUET_PATH = os.path.join(BASE_DIR, "..", "data", "raw", f"Precios_{FECHA}.parquet")
 LOG_PATH = os.path.join(BASE_DIR, "..", "logs", "error_log.txt")
 
 
@@ -148,5 +148,5 @@ def trackear_precios(debug_format = False, debug_info = False):
 
 
 if __name__ == "__main__":
-    trackear_precios(debug_format = False,
-                     debug_info = True)
+    trackear_precios(debug_format = True,
+                     debug_info = False)
