@@ -74,13 +74,13 @@ def trackear_precios():
 
         browser = p.chromium.launch(
                                 headless=False,
-                                # args=[
-                                #     "--window-position=-32000,-32000",  # Mueve la ventana fuera de la pantalla
-                                #     "--window-size=800,600",            # Tamaño mínimo
-                                #     "--disable-infobars",
-                                #     "--no-sandbox",
-                                #     "--disable-gpu"
-                                # ]
+                                args=[
+                                    "--window-position=-32000,-32000",  # Mueve la ventana fuera de la pantalla
+                                    "--window-size=800,600",            # Tamaño mínimo
+                                    "--disable-infobars",
+                                    "--no-sandbox",
+                                    "--disable-gpu"
+                                ]
                             )
         # browser = p.chromium.launch(headless=True,
         #                              args=[
