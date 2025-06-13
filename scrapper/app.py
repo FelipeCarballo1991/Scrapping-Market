@@ -15,6 +15,7 @@ LOG_PATH = os.path.join(BASE_DIR, "..", "logs", "error_log.txt")
 
 
 os.makedirs(os.path.dirname(CSV_PATH), exist_ok=True)
+os.makedirs(os.path.dirname(PARQUET_PATH), exist_ok=True)
 os.makedirs(os.path.dirname(LOG_PATH), exist_ok=True)
 
 
@@ -69,14 +70,10 @@ def obtener_precio(page, url):
 
 def trackear_precios(debug_format = False, debug_info = False):
 
-    if debug_format:
-        PATH = CSV_PATH 
-    
-    else:
-        PATH = PARQUET_PATH
+    PATH = CSV_PATH if debug_format else PARQUET_PATH
 
-    if debug_info:
-        URLS = URLS_DEBUG      
+    urls_a_usar = URLS_DEBUG if debug_info else URLS 
+    
 
     resultados = []    
 
@@ -101,7 +98,7 @@ def trackear_precios(debug_format = False, debug_info = False):
                         }
                       """)
 
-        for clave, datos in URLS.items():
+        for clave, datos in urls_a_usar.items():
             nombre_config = datos["nombre"]           
             unidad = datos["unidad"]
             categoria = datos["categoria"]
@@ -113,7 +110,7 @@ def trackear_precios(debug_format = False, debug_info = False):
 
                 if nombre and precio:
                     resultados.append([
-                        FECHA, nombre_config, nombre, precio, unidad, supermercado, url,categoria
+                        FECHA, nombre_config, nombre, precio, unidad, supermercado, categoria, url
                     ])
                 else:
                     log_error(f"No se pudo obtener el precio para: {nombre_config} | {url}")
@@ -126,7 +123,7 @@ def trackear_precios(debug_format = False, debug_info = False):
 
     # Crear un DataFrame
     df = pd.DataFrame(resultados, columns=[
-        "fecha", "clave_config", "titulo_scrapeado", "precio", "unidad", "supermercado", "url","categoria"
+        "fecha", "clave_config", "titulo_scrapeado", "precio", "unidad", "supermercado", "categoria","url"
     ])
 
     # breakpoint()
@@ -135,18 +132,21 @@ def trackear_precios(debug_format = False, debug_info = False):
     if not os.path.exists(PATH):
 
         if debug_format:                 
-            df.to_csv(PATH, mode='w', index=False, header=True, encoding="utf-8-sig")
+            df.to_csv(PATH+"_DEBUG", mode='w', index=False, header=True, encoding="utf-8-sig")
         else:
             df.to_parquet(PATH, index=False)
 
     else:
         pass
 
+    cantidad_productos = int(df[['clave_config']].nunique().iloc[0])
 
+    print(f"Cantidad de productos scrapeados: {cantidad_productos}")
     print(f"✅ Precios guardados en: {os.path.abspath(PATH)}")
+    
 
 
 
 if __name__ == "__main__":
-    trackear_precios(debug_format = True,
+    trackear_precios(debug_format = False,
                      debug_info = True)

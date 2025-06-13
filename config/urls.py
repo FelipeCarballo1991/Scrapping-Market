@@ -39,6 +39,14 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/bife-de-chorizo-coto-xkg/_/R-00029804-00029804-200?Dy=1",
                 }
+    },    
+    "cuadril": {
+        "nombre": "Cuadril",        
+        "unidad": "KG",        
+        "categoria": "Carnes",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/cuadril-selecci%C3%B3n-x-kg/_/R-00042317-00042317-200?Dy=1",
+                }
     },
         "picada_desgrasada": {
         "nombre": "Picada Desgrasada",        
@@ -48,6 +56,47 @@ URLS = {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/picada-desgrasada-estancias-coto-x-kg/_/R-00048124-00048124-200?Dy=1",
                 }
     },
+        "bola_lomo": {
+        "nombre": "Bola de Lomo",        
+        "unidad": "KG",        
+        "categoria": "Carnes",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/bola-de-lomo-estancias-coto-x-kg/_/R-00047993-00047993-200?Dy=1",
+                }
+    },
+        "nalga": {
+        "nombre": "Nalga",        
+        "unidad": "KG",        
+        "categoria": "Carnes",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/nalga-estancias-coto-x-kg/_/R-00047991-00047991-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
+                }
+    },
+        "peceto": {
+        "nombre": "Peceto",        
+        "unidad": "KG",        
+        "categoria": "Carnes",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/peceto-feteado-x-kg/_/R-00041407-00041407-200?Dy=1",
+                }
+    },
+        "paleta": {
+        "nombre": "Paleta",        
+        "unidad": "KG",        
+        "categoria": "Carnes",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/paleta-del-centro-estancias-coto-x-kg/_/R-00047984-00047984-200?Dy=1",
+                }
+    },
+        "roast_beef": {
+        "nombre": "Roast Beef",        
+        "unidad": "KG",        
+        "categoria": "Carnes",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/roast-beef-estancias-coto-x-kg/_/R-00047985-00047985-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
+                }
+    },
+    
         "bife_parrilla": {
         "nombre": "Bife de Parrilla",        
         "unidad": "KG",        
