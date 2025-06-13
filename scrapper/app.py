@@ -5,11 +5,12 @@ import pandas as pd
 from datetime import datetime
 from playwright.sync_api import sync_playwright
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from config.urls import URLS # <- Importa directamente desde config/urls.py
+from config.urls import URLS,FECHA,URLS_DEBUG
 
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-CSV_PATH = os.path.join(BASE_DIR, "..", "data", "processed", "precios_coto.csv")
+CSV_PATH = os.path.join(BASE_DIR, "..", "data", "processed", f"Precios_{FECHA}.csv")
+PARQUET_PATH = os.path.join(BASE_DIR, "..", "data", "processed", f"Precios_{FECHA}.parquet")
 LOG_PATH = os.path.join(BASE_DIR, "..", "logs", "error_log.txt")
 
 
@@ -66,9 +67,18 @@ def obtener_precio(page, url):
         return None, None
 
 
-def trackear_precios():
-    resultados = []
-    fecha = datetime.now().strftime("%Y-%m-%d")
+def trackear_precios(debug_format = False, debug_info = False):
+
+    if debug_format:
+        PATH = CSV_PATH 
+    
+    else:
+        PATH = PARQUET_PATH
+
+    if debug_info:
+        URLS = URLS_DEBUG      
+
+    resultados = []    
 
     with sync_playwright() as p:
 
@@ -81,41 +91,32 @@ def trackear_precios():
                                     "--no-sandbox",
                                     "--disable-gpu"
                                 ]
-                            )
-        # browser = p.chromium.launch(headless=True,
-        #                              args=[
-        #                                     "--disable-blink-features=AutomationControlled",
-        #                                     "--disable-gpu",
-        #                                     "--no-sandbox",
-        #                                     "--disable-dev-shm-usage",
-        #                                     "--disable-infobars",
-        #                                     "--window-size=1920,1080",
-        #                                 ])
+                            )       
         
         page = browser.new_page()
 
         page.evaluate("""
-            () => {
-                Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
-            }
-        """)
+                        () => {
+                            Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+                        }
+                      """)
 
         for clave, datos in URLS.items():
-            nombre_config = datos["nombre"]
-            url = datos["url"]
-            supermercado = datos["supermercado"]
+            nombre_config = datos["nombre"]           
             unidad = datos["unidad"]
             categoria = datos["categoria"]
+            print(f"🔍 Procesando {nombre_config}")
 
-            print(f"🔍 Procesando {nombre_config}...")
-            nombre, precio = obtener_precio(page, url)
+            for supermercado, url in datos["urls"].items():
+                print(f"    -En Supermercado {supermercado}...")
+                nombre, precio = obtener_precio(page, url)
 
-            if nombre and precio:
-                resultados.append([
-                    fecha, nombre_config, nombre, precio, unidad, supermercado, url,categoria
-                ])
-            else:
-                log_error(f"No se pudo obtener el precio para: {nombre_config} | {url}")
+                if nombre and precio:
+                    resultados.append([
+                        FECHA, nombre_config, nombre, precio, unidad, supermercado, url,categoria
+                    ])
+                else:
+                    log_error(f"No se pudo obtener el precio para: {nombre_config} | {url}")
 
         browser.close()
 
@@ -131,15 +132,21 @@ def trackear_precios():
     # breakpoint()
 
     # Guardar el DataFrame
-    if os.path.exists(CSV_PATH):
-        df.to_csv(CSV_PATH, mode='a', index=False, header=False, encoding='utf-8')
+    if not os.path.exists(PATH):
+
+        if debug_format:                 
+            df.to_csv(PATH, mode='w', index=False, header=True, encoding="utf-8-sig")
+        else:
+            df.to_parquet(PATH, index=False)
+
     else:
-        df.to_csv(CSV_PATH, mode='w', index=False, header=True, encoding='utf-8')
+        pass
 
 
-    print(f"✅ Precios guardados en: {os.path.abspath(CSV_PATH)}")
+    print(f"✅ Precios guardados en: {os.path.abspath(PATH)}")
 
 
 
 if __name__ == "__main__":
-    trackear_precios()
+    trackear_precios(debug_format = True,
+                     debug_info = True)
