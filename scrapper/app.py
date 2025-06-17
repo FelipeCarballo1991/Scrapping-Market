@@ -30,16 +30,39 @@ def log_error(msg):
         f.write(f"[{timestamp}] {msg}\n")
 
 
-def obtener_precio_coto(page, url):
+def obtener_precio(page, url):
     try:
-        page.goto(url, timeout=60000)
-        page.wait_for_selector('h2.title.text-dark', timeout=15000)
-        # page.wait_for_selector('var.price.h3.ng-star-inserted', timeout=15000) 
+        page.goto(url, timeout=60000)       
 
-        # price h3 ng-star-inserted
+        # html = page.content()
+        # # breakpoint()
+        # with open("debug_dia.html", "w", encoding="utf-8") as f:
+        #     f.write(html)
+        
+        # breakpoint()
 
-        titulo = page.query_selector('h2.title.text-dark').inner_text().strip()
-        # precio_raw = page.query_selector('var.price.h3.ng-star-inserted').inner_text().strip()
+        # Selectores posibles para el título (Coto, Dia, etc.)
+        titulo = None
+        selectores_titulo = [
+            'h2.title.text-dark',  # Coto
+            'h1.vtex-store-components-3-x-productNameContainer',            
+            'span.vtex-store-components-3-x-productBrand.vtex-store-components-3-x-productBrand--productNamePdp',
+            'span.vtex-store-components-3-x-productBrand '
+        ]
+
+        for selector in selectores_titulo:
+            try:
+                page.wait_for_selector(selector, timeout=5000)
+                titulo = page.query_selector(selector).inner_text().strip()
+                # breakpoint()
+                break
+            except:
+                continue
+
+        if not titulo:
+            log_error(f"[ERROR] No se encontró el título en {url}")          
+            
+            return None, None
 
         # Verificar si el producto está disponible
         texto_estado = page.inner_text('body')
@@ -53,13 +76,19 @@ def obtener_precio_coto(page, url):
             'var.price.h3.ng-star-inserted',
             'var.price.h3',
             'div.mb-1 var',
-            'price h3'
+            'price h3',            
+            "span.diaio-store-5-x-sellingPriceValue",
+            # 'div.jumboargentinaio-store-theme-2t-mVsKNpKjmCAEM_AMCQH'
+            'div.vtex-price-format-gallery'
         ]
+
+        # breakpoint()
 
         for selector in selectores_posibles:
             try:
                 page.wait_for_selector(selector, timeout=5000)
                 precio_raw = page.query_selector(selector).inner_text().strip()
+                
                 break
             except:
                 continue
@@ -70,7 +99,7 @@ def obtener_precio_coto(page, url):
             return titulo, None
 
         # Limpieza del precio
-        precio = float(precio_raw.replace("$", "").replace(".", "").replace(",", "."))
+        precio = float(precio_raw.replace("$", "").replace(".", "").replace(",", "."))       
 
         return titulo, precio
 
@@ -83,7 +112,6 @@ def obtener_precio_coto(page, url):
 def trackear_precios(debug_format = False, debug_info = False):
 
     PATH = CSV_PATH if debug_format else PARQUET_PATH
-
     urls_a_usar = URLS_DEBUG if debug_info else URLS 
     
 
@@ -119,8 +147,8 @@ def trackear_precios(debug_format = False, debug_info = False):
             for supermercado, url in datos["urls"].items():
                 print(f"    -En Supermercado {supermercado}...")
 
-                if supermercado.lower() == "coto":
-                    nombre, precio = obtener_precio_coto(page, url)
+                
+                nombre, precio = obtener_precio(page, url)
 
                 if nombre and precio:
                     resultados.append([
@@ -146,7 +174,7 @@ def trackear_precios(debug_format = False, debug_info = False):
     if not os.path.exists(PATH):
 
         if debug_format:                 
-            df.to_csv(PATH+"_DEBUG", mode='w', index=False, header=True, encoding="utf-8-sig")
+            df.to_csv(PATH, mode='w', index=False, header=True, encoding="utf-8-sig")
         else:
             df.to_parquet(PATH, index=False)
 
@@ -163,4 +191,4 @@ def trackear_precios(debug_format = False, debug_info = False):
 
 if __name__ == "__main__":
     trackear_precios(debug_format = True,
-                     debug_info = False)
+                     debug_info = True)

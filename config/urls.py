@@ -4,16 +4,18 @@ import pandas as pd
 FECHA = datetime.now().strftime("%Y-%m-%d")
 
 URLS_DEBUG = {
-    "bife_americano": {
-        "nombre": "Bife Americano",        
-        "unidad": "kg",        
-        "categoria": "Carnes",
+     "casancrem_grande": {
+        "nombre": "Casancrem 500 gr",        
+        "unidad": "gr",        
+        "categoria": "Lacteo",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/bife-americano-x-kg/_/R-00041414-00041414-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/queso-crema-cl%C3%A1sico-casancrem-500gr/_/R-00592566-00592566-200?Dy=1",
+                "Dia": "https://diaonline.supermercadosdia.com.ar/queso-crema-clasico-casancrem-500-gr-2797/p",
+                "Jumbo": "https://www.jumbo.com.ar/queso-crema-clasico-500-gr-casancrem/p"
+                # "Dia": "https://diaonline.supermercadosdia.com.ar/queso-crema-clasico-casancrem-290-gr-298788/p"
                 }
-    }
 }
-
+}
 
 URLS = {
     "bife_americano": {
@@ -505,6 +507,7 @@ URLS = {
         "categoria": "Lacteo",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/queso-crema-cl%C3%A1sico-casancrem-500gr/_/R-00592566-00592566-200?Dy=1",
+                "Dia": "https://diaonline.supermercadosdia.com.ar/queso-crema-clasico-casancrem-500-gr-2797/p"
                 }
     },                                            
         "casancrem_chico": {
