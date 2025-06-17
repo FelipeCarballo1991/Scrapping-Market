@@ -11,21 +11,26 @@ from config.urls import URLS,FECHA,URLS_DEBUG
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CSV_PATH = os.path.join(BASE_DIR, "..", "data", "raw", f"Precios_{FECHA}.csv")
 PARQUET_PATH = os.path.join(BASE_DIR, "..", "data", "raw", f"Precios_{FECHA}.parquet")
-LOG_PATH = os.path.join(BASE_DIR, "..", "logs", "error_log.txt")
+LOG_PATH_ERROR = os.path.join(BASE_DIR, "..", "logs", "error_log.txt")
+LOG_PATH_WARNING = os.path.join(BASE_DIR, "..", "logs", "error_warning.txt")
 
 
 os.makedirs(os.path.dirname(CSV_PATH), exist_ok=True)
 os.makedirs(os.path.dirname(PARQUET_PATH), exist_ok=True)
-os.makedirs(os.path.dirname(LOG_PATH), exist_ok=True)
+os.makedirs(os.path.dirname(LOG_PATH_ERROR), exist_ok=True)
 
+def log_warning(msg):
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with open(LOG_PATH_WARNING, "a", encoding="utf-8") as f:
+        f.write(f"[{timestamp}] [WARNING] {msg}\n")
 
 def log_error(msg):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    with open(LOG_PATH, "a", encoding="utf-8") as f:
+    with open(LOG_PATH_ERROR, "a", encoding="utf-8") as f:
         f.write(f"[{timestamp}] {msg}\n")
 
 
-def obtener_precio(page, url):
+def obtener_precio_coto(page, url):
     try:
         page.goto(url, timeout=60000)
         page.wait_for_selector('h2.title.text-dark', timeout=15000)
@@ -36,12 +41,19 @@ def obtener_precio(page, url):
         titulo = page.query_selector('h2.title.text-dark').inner_text().strip()
         # precio_raw = page.query_selector('var.price.h3.ng-star-inserted').inner_text().strip()
 
+        # Verificar si el producto está disponible
+        texto_estado = page.inner_text('body')
+        if "Producto no disponible por el momento" in texto_estado:
+            log_warning(f"[INFO] Producto no disponible: {titulo} – {url}")
+            return titulo, None
+
         # Intentar varios selectores para el precio
         precio_raw = None
         selectores_posibles = [
             'var.price.h3.ng-star-inserted',
             'var.price.h3',
-            'div.mb-1 var'
+            'div.mb-1 var',
+            'price h3'
         ]
 
         for selector in selectores_posibles:
@@ -106,7 +118,9 @@ def trackear_precios(debug_format = False, debug_info = False):
 
             for supermercado, url in datos["urls"].items():
                 print(f"    -En Supermercado {supermercado}...")
-                nombre, precio = obtener_precio(page, url)
+
+                if supermercado.lower() == "coto":
+                    nombre, precio = obtener_precio_coto(page, url)
 
                 if nombre and precio:
                     resultados.append([

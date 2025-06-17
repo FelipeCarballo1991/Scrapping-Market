@@ -6,10 +6,10 @@ FECHA = datetime.now().strftime("%Y-%m-%d")
 URLS_DEBUG = {
     "bife_americano": {
         "nombre": "Bife Americano",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Carnes",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/bife-americano-x-KG/_/R-00041414-00041414-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/bife-americano-x-kg/_/R-00041414-00041414-200?Dy=1",
                 }
     }
 }
@@ -18,163 +18,163 @@ URLS_DEBUG = {
 URLS = {
     "bife_americano": {
         "nombre": "Bife Americano",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Carnes",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/bife-americano-x-KG/_/R-00041414-00041414-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/bife-americano-x-kg/_/R-00041414-00041414-200?Dy=1",
                 }
     },
     "ojo_bife": {
         "nombre": "Ojo de Bife",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Carnes",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/ojo-de-bife-coto-xKG/_/R-00029810-00029810-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/ojo-de-bife-coto-xkg/_/R-00029810-00029810-200?Dy=1",
                 }
     },
     "bife_chorizo": {
         "nombre": "Bife de Chorizo",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Carnes",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/bife-de-chorizo-coto-xKG/_/R-00029804-00029804-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/bife-de-chorizo-coto-xkg/_/R-00029804-00029804-200?Dy=1",
                 }
     },    
     "cuadril": {
         "nombre": "Cuadril",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Carnes",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/cuadril-selecci%C3%B3n-x-KG/_/R-00042317-00042317-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/cuadril-selecci%C3%B3n-x-kg/_/R-00042317-00042317-200?Dy=1",
                 }
     },
-        "picada_desGRasada": {
-        "nombre": "Picada DesGRasada",        
-        "unidad": "KG",        
+        "picada_desgrasada": {
+        "nombre": "Picada Desgrasada",        
+        "unidad": "kg",        
         "categoria": "Carnes",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/picada-desGRasada-estancias-coto-x-KG/_/R-00048124-00048124-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/picada-desgrasada-estancias-coto-x-kg/_/R-00048124-00048124-200?Dy=1",
                 }
     },
         "bola_lomo": {
         "nombre": "Bola de Lomo",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Carnes",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/bola-de-lomo-estancias-coto-x-KG/_/R-00047993-00047993-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/bola-de-lomo-estancias-coto-x-kg/_/R-00047993-00047993-200?Dy=1",
                 }
     },
         "nalga": {
         "nombre": "Nalga",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Carnes",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/nalga-estancias-coto-x-KG/_/R-00047991-00047991-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/nalga-estancias-coto-x-kg/_/R-00047991-00047991-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
                 }
     },
         "peceto": {
         "nombre": "Peceto",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Carnes",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/peceto-feteado-x-KG/_/R-00041407-00041407-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/peceto-feteado-x-kg/_/R-00041407-00041407-200?Dy=1",
                 }
     },
         "paleta": {
         "nombre": "Paleta",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Carnes",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/paleta-del-centro-estancias-coto-x-KG/_/R-00047984-00047984-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/paleta-del-centro-estancias-coto-x-kg/_/R-00047984-00047984-200?Dy=1",
                 }
     },
         "roast_beef": {
         "nombre": "Roast Beef",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Carnes",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/roast-beef-estancias-coto-x-KG/_/R-00047985-00047985-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/roast-beef-estancias-coto-x-kg/_/R-00047985-00047985-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
                 }
     },
     
         "bife_parrilla": {
         "nombre": "Bife de Parrilla",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Carnes",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/bife-parrilla-estancias-coto-x-KG/_/R-00048129-00048129-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/bife-parrilla-estancias-coto-x-kg/_/R-00048129-00048129-200?Dy=1",
                 }
     },    
         "pollo": {
         "nombre": "Pollo Entero",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Carnes",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/pollo-congelado-x-KG/_/R-00042989-00042989-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/pollo-congelado-x-kg/_/R-00042989-00042989-200?Dy=1",
                 }
     },
     "carre_cerdo": {
         "nombre": "Carre de Cerdo",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Carnes",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/carr%C3%A9-de-cerdo-x-KG/_/R-00017162-00017162-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/carr%C3%A9-de-cerdo-x-kg/_/R-00017162-00017162-200?Dy=1",
                 }
     },    
     "bondiola_cerdo": {
         "nombre": "Bondiola de Cerdo",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Carnes",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/bondiola-de-cerdo-x-KG/_/R-00000943-00000943-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/bondiola-de-cerdo-x-kg/_/R-00000943-00000943-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
                 }
     },     
-        "papa_neGRa": {
-        "nombre": "Papa NeGRa",        
-        "unidad": "KG",        
+        "papa_negra": {
+        "nombre": "Papa Negra",        
+        "unidad": "kg",        
         "categoria": "Verdura",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/papa-neGRa-selecci%C3%B3n-x-KG/_/R-00060947-00060947-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/papa-negra-selecci%C3%B3n-x-kg/_/R-00060947-00060947-200?Dy=1",
                 }
     },    
         "cebolla": {
         "nombre": "Cebolla",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Verdura",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/cebolla-a-GRanel-x-KG/_/R-00000602-00000602-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/cebolla-a-granel-x-kg/_/R-00000602-00000602-200?Dy=1",
                 }
     },    
         "coliflor": {
         "nombre": "Coliflor",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Verdura",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/coliflor-x-KG/_/R-00000619-00000619-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/coliflor-x-kg/_/R-00000619-00000619-200?Dy=1",
                 }
     },    
         "repollo_colorado": {
         "nombre": "Repollo Colorado",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Verdura",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/repollo-colorado-x-KG/_/R-00000680-00000680-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/repollo-colorado-x-kg/_/R-00000680-00000680-200?Dy=1",
                 }
     }, 
         "repollo_blanco": {
         "nombre": "Repollo Blanco",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Verdura",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/repollo-blanco-x-KG/_/R-00000678-00000678-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/repollo-blanco-x-kg/_/R-00000678-00000678-200?Dy=1",
                 }
     },    
         "zanahoria": {
         "nombre": "Zanahoria",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Verdura",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/zanahoria-seleccion-xKG/_/R-00000686-00000686-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/zanahoria-seleccion-xkg/_/R-00000686-00000686-200?Dy=1",
                 }
     },
       
@@ -188,104 +188,104 @@ URLS = {
     },             
         "lechuga_mantecosa": {
         "nombre": "Lechuga Mantecosa",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Verdura",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/lechuga-mantecosa-x-KG/_/R-00000424-00000424-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/lechuga-mantecosa-x-kg/_/R-00000424-00000424-200?Dy=1",
                 }
     }, 
 
         "lechuga_capuchina": {
         "nombre": "Lechuga Capuchina",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Verdura",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/lechuga-capuchina-x-KG/_/R-00000648-00000648-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/lechuga-capuchina-x-kg/_/R-00000648-00000648-200?Dy=1",
                 }   
     },             
         "lechuga_criolla": {
         "nombre": "Lechuga Criolla",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Verdura",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/lechuga-criolla-x-KG/_/R-00000649-00000649-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/lechuga-criolla-x-kg/_/R-00000649-00000649-200?Dy=1",
                 }
     },             
         "lechuga_francesa": {
         "nombre": "Lechuga Francesa",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Verdura",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/lechuga-francesa-x-KG/_/R-00000650-00000650-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/lechuga-francesa-x-kg/_/R-00000650-00000650-200?Dy=1",
                 }
     },             
         "brocoli": {
         "nombre": "Brocoli",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Verdura",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/brocoli-x-KG/_/R-00000598-00000598-200",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/brocoli-x-kg/_/R-00000598-00000598-200",
                 }
     },             
         "jengibre": {
         "nombre": "Jengibre",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Verdura",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/jengibre-x-KG/_/R-00092926-00092926-200",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/jengibre-x-kg/_/R-00092926-00092926-200",
                 }
     },             
         "pimiento_rojo": {
         "nombre": "Pimiento Rojo",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Verdura",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/pimiento-rojo-xKG/_/R-00000671-00000671-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/pimiento-rojo-xkg/_/R-00000671-00000671-200?Dy=1",
                 }
     },             
         "zapallo_anco": {
         "nombre": "Zapallo Anco",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Verdura",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/zapallo-anco-x-KG/_/R-00000688-00000688-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/zapallo-anco-x-kg/_/R-00000688-00000688-200?Dy=1",
                 }
     },             
         "remolacha": {
         "nombre": "Remolacha",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Verdura",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/remolacha-x-KG/_/R-00000677-00000677-200",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/remolacha-x-kg/_/R-00000677-00000677-200",
                 }
     },             
         "tomate_redondo": {
         "nombre": "Tomate Redondo",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Verdura",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/tomate-red-x-KG/_/R-00000684-00000684-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/tomate-red-x-kg/_/R-00000684-00000684-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
                 }
     },             
         "tomate_perita": {
         "nombre": "Tomate Perita",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Verdura",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/tomate-perit-xKG/_/R-00000683-00000683-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/tomate-perit-xkg/_/R-00000683-00000683-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
                 }
     },                 
-        "espinaca_GRanja_sol": {
-        "nombre": "Espinaca GRanja del Sol",        
-        "unidad": "KG",        
+        "espinaca_granja_sol": {
+        "nombre": "Espinaca granja del Sol",        
+        "unidad": "kg",        
         "categoria": "Verdura",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/espinaca-congelada-GRanja-del-sol-1KG/_/R-00565167-00565167-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/espinaca-congelada-granja-del-sol-1kg/_/R-00565167-00565167-200?Dy=1",
                 }
     },                 
         "espinaca_lucchetti": {
-        "nombre": "Espinaca Luchetti 400 GR",        
-        "unidad": "GR",        
+        "nombre": "Espinaca Luchetti 400 gr",        
+        "unidad": "gr",        
         "categoria": "Verdura",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/espinaca-congelada-lucchetti-400g/_/R-00565182-00565182-200?Dy=1",
@@ -293,87 +293,87 @@ URLS = {
     },               
         "banana": {
         "nombre": "Banana",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Fruta",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/banana-cavendish-x-KG/_/R-00000446-00000446-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/banana-cavendish-x-kg/_/R-00000446-00000446-200?Dy=1",
                 }
     },             
         "naranja_jugo": {
         "nombre": "Naranja Jugo",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Fruta",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/naranja-jugo-xKG/_/R-00061005-00061005-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/naranja-jugo-xkg/_/R-00061005-00061005-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
                 }
     },                 
         "uva_red_glove": {
         "nombre": "Uva Red Glove",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Fruta",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/uva-red-globe-xKG/_/R-00000861-00000861-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/uva-red-globe-xkg/_/R-00000861-00000861-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
                 }
     },                     
         "manzana_roja": {
         "nombre": "Manzana Roja",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Fruta",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/manzana-comercial-x-KG/_/R-00061002-00061002-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/manzana-comercial-x-kg/_/R-00061002-00061002-200?Dy=1",
                 }
     },                     
         "manzana_roja_elegida": {
         "nombre": "Manzana Elegida",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Fruta",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/manzana-red-elegida-x-KG/_/R-00000528-00000528-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/manzana-red-elegida-x-kg/_/R-00000528-00000528-200?Dy=1",
                 }
     },                       
         "manzana_verde": {
         "nombre": "Manzana Verde",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Fruta",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/manzana-g-smith-xKG/_/R-00000527-00000527-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/manzana-g-smith-xkg/_/R-00000527-00000527-200?Dy=1",
                 }
     },                             
         "mandarina_criolla": {
         "nombre": "Mandarina Criolla",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Fruta",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/mandarina-criolla-xKG/_/R-00000501-00000501-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/mandarina-criolla-xkg/_/R-00000501-00000501-200?Dy=1",
                 }
     },                           
         "mandarina_nova": {
         "nombre": "Mandarina Nova",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Fruta",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/mandarina-nova-x-KG/_/R-00000204-00000204-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/mandarina-nova-x-kg/_/R-00000204-00000204-200?Dy=1",
                 }
     },                      
         "limon": {
         "nombre": "Limon",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Fruta",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/limon-comercia-xKG/_/R-00061007-00061007-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/limon-comercia-xkg/_/R-00061007-00061007-200?Dy=1",
                 }
     },                         
         "kiwi": {
         "nombre": "Kiwi",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Fruta",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/kiwi-selecci%C3%B3n-x-KG/_/R-00000496-00000496-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/kiwi-selecci%C3%B3n-x-kg/_/R-00000496-00000496-200?Dy=1",
                 }
     },                             
         "arandanos_solimeno": {
         "nombre": "Arandanos Solimeno",        
-        "unidad": "GR",        
+        "unidad": "gr",        
         "categoria": "Fruta",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/frutas-congeladas-ar%C3%A1ndanos-solimeno-500g/_/R-00566036-00566036-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
@@ -381,15 +381,15 @@ URLS = {
     },                                
         "arandanos_karinat": {
         "nombre": "Arandanos Karinat",        
-        "unidad": "GR",        
+        "unidad": "gr",        
         "categoria": "Fruta",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/frutas-arandanos-karinat-doy-300-GRm/_/R-00502889-00502889-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/frutas-arandanos-karinat-doy-300-grm/_/R-00502889-00502889-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
                 }
     },                                
         "arandanos_quillen": {
         "nombre": "Arandanos Quillen",        
-        "unidad": "GR",        
+        "unidad": "gr",        
         "categoria": "Fruta",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/frutas-congeladas-ar%C3%A1ndanos-quillen-400g/_/R-00604305-00604305-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
@@ -397,15 +397,15 @@ URLS = {
     },                                
         "nuez_cascara": {
         "nombre": "Nuez con Cascara",        
-        "unidad": "KG",        
+        "unidad": "kg",        
         "categoria": "Fruta",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/nuez-GRande-c-cascar-xKG/_/R-00017749-00017749-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/nuez-grande-c-cascar-xkg/_/R-00017749-00017749-200?Dy=1",
                 }
     },                                   
         "yogurt_ilolay_vainilla": {
         "nombre": "Yogurt Ilolay Vainilla",        
-        "unidad": "GR",        
+        "unidad": "gr",        
         "categoria": "Lacteo",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/yogur-entero-ilolay-vainilla-bebible-900g/_/R-00013922-00013922-200",
@@ -413,7 +413,7 @@ URLS = {
     },                                      
         "yogurt_ilolay_vainilla_descremado": {
         "nombre": "Yogurt Ilolay Vainilla Descremado",        
-        "unidad": "GR",        
+        "unidad": "gr",        
         "categoria": "Lacteo",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/yogur-descremado-ilolay-vainilla-bebible-1kg/_/R-00483171-00483171-200",
@@ -421,7 +421,7 @@ URLS = {
     },                                         
         "yogurt_ilolay_frutilla_descremado": {
         "nombre": "Yogurt Ilolay Frutilla Descremado",        
-        "unidad": "GR",        
+        "unidad": "gr",        
         "categoria": "Lacteo",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/yogur-descremado-ilolay-frutilla-bebible-1kg/_/R-00483170-00483170-200",
@@ -429,7 +429,7 @@ URLS = {
     },                                           
         "yogurt_ilolay_durazno": {
         "nombre": "Yogurt Ilolay Durazno",        
-        "unidad": "GR",        
+        "unidad": "gr",        
         "categoria": "Lacteo",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/yogur-ilolay-durazno-bebible-1kg/_/R-00483169-00483169-200",
@@ -437,7 +437,7 @@ URLS = {
     },                                      
         "yogurt_ilolay_frutilla_kiwi": {
         "nombre": "Yogurt Ilolay Frutilla kiwi",        
-        "unidad": "GR",        
+        "unidad": "gr",        
         "categoria": "Lacteo",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/yogur-bebible-parcialmente-descremado-frutilla-kiwi-ilolay-900-gr/_/R-00546792-00546792-200",
@@ -445,7 +445,7 @@ URLS = {
     },                                      
         "yogurt_milkaut_descremado": {
         "nombre": "Yogurt Milkaut Vainilla Descremado",        
-        "unidad": "GR",        
+        "unidad": "gr",        
         "categoria": "Lacteo",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/yogur-bebible-descremado-sabor-vainilla-milkaut-900g/_/R-00562336-00562336-200?Dy=1",
@@ -453,7 +453,7 @@ URLS = {
     },                                         
         "yogurt_milkaut_vainilla_descremado": {
         "nombre": "Yogurt Milkaut Vainilla Descremado",        
-        "unidad": "GR",        
+        "unidad": "gr",        
         "categoria": "Lacteo",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/yogur-bebible-entero-fortificado-vainilla-milkaut-1-2-kg/_/R-00511818-00511818-200?Dy=1",
@@ -461,7 +461,7 @@ URLS = {
     },                                         
         "yogurt_milkaut_frutilla_descremado": {
         "nombre": "Yogurt Milkaut Frutilla Descremado",        
-        "unidad": "GR",        
+        "unidad": "gr",        
         "categoria": "Lacteo",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/yogur-bebible-entero-fortificado-vainilla-milkaut-1-2-kg/_/R-00511818-00511818-200?Dy=1",
@@ -469,7 +469,7 @@ URLS = {
     },                                            
         "yogurt_milkaut_lactosa": {
         "nombre": "Yogurt Milkaut Vainilla 0 Lactosa",        
-        "unidad": "GR",        
+        "unidad": "gr",        
         "categoria": "Lacteo",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/yogur-bebible-descremado-sabor-frutilla-milkaut-900g/_/R-00562324-00562324-200?Dy=1",
@@ -477,7 +477,7 @@ URLS = {
     },                                            
         "yogurt_milkaut_durazno": {
         "nombre": "Yogurt Milkaut Durazno",        
-        "unidad": "GR",        
+        "unidad": "gr",        
         "categoria": "Lacteo",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/yogur-bebible-entero-durazno-milkaut-sch-900-grm/_/R-00521116-00521116-200?Dy=1",
@@ -485,7 +485,7 @@ URLS = {
     },                                            
         "yogurt_milkaut_vainilla": {
         "nombre": "Yogurt Milkaut Vainilla",        
-        "unidad": "GR",        
+        "unidad": "gr",        
         "categoria": "Lacteo",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/yogur-bebible-entero-vainilla-milkaut-sch-900-grm/_/R-00521115-00521115-200?Dy=1",
@@ -493,7 +493,7 @@ URLS = {
     },                                            
         "yogurt_milkaut_frutilla_fortificado": {
         "nombre": "Yogurt Milkaut Frutilla Fortificado",        
-        "unidad": "GR",        
+        "unidad": "gr",        
         "categoria": "Lacteo",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/yog-beb-ent-fort-fru-milkaut-sch-1250-kgm/_/R-00510422-00510422-200?Dy=1",
@@ -501,7 +501,7 @@ URLS = {
     },                                            
         "casancrem_grande": {
         "nombre": "Casancrem 500 gr",        
-        "unidad": "GR",        
+        "unidad": "gr",        
         "categoria": "Lacteo",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/queso-crema-cl%C3%A1sico-casancrem-500gr/_/R-00592566-00592566-200?Dy=1",
@@ -509,7 +509,7 @@ URLS = {
     },                                            
         "casancrem_chico": {
         "nombre": "Casancrem 290 gr",        
-        "unidad": "GR",        
+        "unidad": "gr",        
         "categoria": "Lacteo",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/queso-crema-cl%C3%A1sico-casancrem-290gr/_/R-00572016-00572016-200?Dy=1",
@@ -517,15 +517,15 @@ URLS = {
     },                                            
         "manteca_chica_serenisima": {
         "nombre": "Manteca La Serenisima 100 gr",        
-        "unidad": "GR",        
+        "unidad": "gr",        
         "categoria": "Lacteo",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/categoria?_dyncharset=utf-8&Dy=1&Ntt=manteca%20la%20serenisima",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/manteca-la-serenisima-100gr/_/R-00003817-00003817-200?Dy=1",
                 }
     },                                            
         "manteca_grande_serenisima": {
         "nombre": "Manteca La Serenisima 200 gr",        
-        "unidad": "GR",        
+        "unidad": "gr",        
         "categoria": "Lacteo",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/manteca-la-serenisima-200gr/_/R-00003818-00003818-200?Dy=1",
@@ -533,7 +533,7 @@ URLS = {
     },                                            
         "queso_rallado_serenisima_130": {
         "nombre": "Queso Rallado La Serenisima 130 gr",        
-        "unidad": "GR",        
+        "unidad": "gr",        
         "categoria": "Lacteo",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/queso-rallado-reggianito-la-serenisima-130g/_/R-00510760-00510760-200?Dy=1",
@@ -541,7 +541,7 @@ URLS = {
     },                                            
         "queso_rallado_serenisima_175": {
         "nombre": "Queso Rallado La Serenisima 175 gr",        
-        "unidad": "GR",        
+        "unidad": "gr",        
         "categoria": "Lacteo",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/queso-rallado-reggianito-la-serenisima-175g/_/R-00510763-00510763-200?Dy=1",
@@ -549,7 +549,7 @@ URLS = {
     },                                            
         "leche_3_ninas": {
         "nombre": "Leche Larga Vida Las tres Ninas",        
-        "unidad": "GR",        
+        "unidad": "gr",        
         "categoria": "Lacteo",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/leche-larga-vida-entera-las-tres-ni%C3%B1as-ttb-1l/_/R-00254550-00254550-200",
@@ -557,12 +557,45 @@ URLS = {
     },                                            
         "leche_serenisima": {
         "nombre": "Leche Larga Vida La Serenisima",        
-        "unidad": "GR",        
+        "unidad": "gr",        
         "categoria": "Lacteo",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/leche-larga-vida-entera-ua-clasica-3-la-serenisima-1l/_/R-00251875-00251875-200",
                 }
-    }
+    },                                            
+        "bizcochuelo_morixe": {
+        "nombre": "Bizcochuelo Morixe Chocolate",        
+        "unidad": "gr",        
+        "categoria": "Almacen",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/bizcochuelo-sabor-chocolate-morixe-540-grm/_/R-00541561-00541561-200?Dy=1",
+                }
+    },                                            
+        "arroz_molinos_ala_grande": {
+        "nombre": "Arroz Molinos Ala 1 Kg",        
+        "unidad": "kg",        
+        "categoria": "Almacen",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/arroz-largo-fino-molinos-ala-paquete-1-kg/_/R-00002270-00002270-200?Dy=1",
+                }
+    },                                            
+        "arroz_molinos_ala_chico": {
+        "nombre": "Arroz Molinos Ala 500 gr",        
+        "unidad": "gr",        
+        "categoria": "Almacen",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/arroz-largo-fino-molinos-ala-paquete-1-kg/_/R-00002270-00002270-200?Dy=1",
+                }
+    },                                            
+        "arroz_molinos_ala_chico": {
+        "nombre": "Arroz Molinos Ala 500 gr",        
+        "unidad": "gr",        
+        "categoria": "Almacen",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/arroz-largo-fino-molinos-ala-paquete-1-kg/_/R-00002270-00002270-200?Dy=1",
+                }
+    },
+
                      
                 
 
