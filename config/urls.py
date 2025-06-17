@@ -587,23 +587,78 @@ URLS = {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/arroz-largo-fino-molinos-ala-paquete-1-kg/_/R-00002270-00002270-200?Dy=1",
                 }
     },                                            
-        "arroz_molinos_ala_chico": {
-        "nombre": "Arroz Molinos Ala 500 gr",        
+        "harina_pizza_morixe": {
+        "nombre": "Harina 0000 Morixe",        
         "unidad": "gr",        
         "categoria": "Almacen",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/arroz-largo-fino-molinos-ala-paquete-1-kg/_/R-00002270-00002270-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/harina-trigo-0000-morixe-1kg/_/R-00480052-00480052-200?Dy=1",
                 }
-    },
-
-                     
-                
-
-
-
+    },                                            
+        "harina_pizza_favorita": {
+        "nombre": "Harina 0000 Favorita",        
+        "unidad": "kg",        
+        "categoria": "Almacen",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/harina-trigo-0000-fortificado-con-hierro-favorita-1kg/_/R-00577876-00577876-200?Dy=1",
+                }
+    },                                            
+        "harina_pizza_blancaflor": {
+        "nombre": "Harina 0000 Blancaflor",        
+        "unidad": "kg",        
+        "categoria": "Almacen",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/harina-trigo-0000-blancaflor-1kg/_/R-00581616-00581616-200?Dy=1",
+                }
+    },                                            
+        "harina_pizza_pureza": {
+        "nombre": "Harina 0000 Pureza",        
+        "unidad": "kg",        
+        "categoria": "Almacen",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/harina-de-trigo-pureza-0000-paquete-1-kg/_/R-00253696-00253696-200?Dy=1",
+                }
+    },                                            
+        "tomate_lata_campanola": {
+        "nombre": "Tomate Perita La Campanola Lata",        
+        "unidad": "unidad",        
+        "categoria": "Almacen",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/tomate-perita-la-campagnola-lata-400-gr/_/R-00046126-00046126-200?Dy=1",
+                }
+    },                                            
+        "lentejas_coto": {
+        "nombre": "Lentejas Coto",        
+        "unidad": "unidad",        
+        "categoria": "Almacen",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/lentejas-coto-bolsa-400-gr/_/R-00171605-00171605-200?Dy=1",
+                }
+    },                                            
+        "lentejas_elio": {
+        "nombre": "Lentejas Don Elio",        
+        "unidad": "unidad",        
+        "categoria": "Almacen",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/lentejas-elio-bolsa-400-gr/_/R-00027685-00027685-200?Dy=1",
+                }
+    },                                            
+        "polenta_morixe": {
+        "nombre": "Polenta Morixe",        
+        "unidad": "kg",        
+        "categoria": "Almacen",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/polenta-morixe-1kg/_/R-00511516-00511516-200?Dy=1",
+                }
+    },                                            
+        "polenta_presto": {
+        "nombre": "Polenta Presto Pronta",        
+        "unidad": "gr",        
+        "categoria": "Almacen",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/polenta-instantanea-presto-pronta-paq-730-grm/_/R-00532414-00532414-200?Dy=1",
+                 }
     }
 
-    
-    
-    
-    
+
+}
