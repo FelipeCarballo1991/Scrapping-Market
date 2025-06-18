@@ -47,12 +47,13 @@ def obtener_precio(page, url):
             'h2.title.text-dark',  # Coto
             'h1.vtex-store-components-3-x-productNameContainer',            
             'span.vtex-store-components-3-x-productBrand.vtex-store-components-3-x-productBrand--productNamePdp',
-            'span.vtex-store-components-3-x-productBrand '
+            'span.vtex-store-components-3-x-productBrand ',
+            'span.vtex-store-components-3-x-productBrand.vtex-store-components-3-x-productBrand--quickview' 
         ]
 
         for selector in selectores_titulo:
             try:
-                page.wait_for_selector(selector, timeout=5000)
+                page.wait_for_selector(selector, timeout=10000)
                 titulo = page.query_selector(selector).inner_text().strip()
                 # breakpoint()
                 break
@@ -74,20 +75,29 @@ def obtener_precio(page, url):
         precio_raw = None
         selectores_posibles = [
             'var.price.h3.ng-star-inserted',
-            'var.price.h3',
+            'var.price.h3', 
+            'div.mb-1 var.price.h3',          
             'div.mb-1 var',
             'price h3',            
             "span.diaio-store-5-x-sellingPriceValue",
             # 'div.jumboargentinaio-store-theme-2t-mVsKNpKjmCAEM_AMCQH'
-            'div.vtex-price-format-gallery'
+            'div.vtex-price-format-gallery',
+            "span[class*='product-price-0-x-currencyContainer']"  # Para Carrefour
         ]
 
         # breakpoint()
 
         for selector in selectores_posibles:
             try:
-                page.wait_for_selector(selector, timeout=5000)
-                precio_raw = page.query_selector(selector).inner_text().strip()
+                page.wait_for_selector(selector, timeout=10000)
+
+                if "currencyContainer" in selector:
+                    span_container = page.query_selector(selector)
+                    span_elements = span_container.query_selector_all("span")
+                    precio_raw = ''.join([s.inner_text().strip() for s in span_elements]).replace("\u00a0", "")                   
+
+                else:
+                    precio_raw = page.query_selector(selector).inner_text().strip()
                 
                 break
             except:

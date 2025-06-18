@@ -4,15 +4,12 @@ import pandas as pd
 FECHA = datetime.now().strftime("%Y-%m-%d")
 
 URLS_DEBUG = {
-     "casancrem_grande": {
-        "nombre": "Casancrem 500 gr",        
-        "unidad": "gr",        
-        "categoria": "Lacteo",
+     "brocoli": {
+        "nombre": "Brocoli",        
+        "unidad": "kg",        
+        "categoria": "Verdura",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/queso-crema-cl%C3%A1sico-casancrem-500gr/_/R-00592566-00592566-200?Dy=1",
-                "Dia": "https://diaonline.supermercadosdia.com.ar/queso-crema-clasico-casancrem-500-gr-2797/p",
-                "Jumbo": "https://www.jumbo.com.ar/queso-crema-clasico-500-gr-casancrem/p"
-                # "Dia": "https://diaonline.supermercadosdia.com.ar/queso-crema-clasico-casancrem-290-gr-298788/p"
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/brocoli-x-kg/_/R-00000598-00000598-200",
                 }
 }
 }
@@ -661,7 +658,119 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/polenta-instantanea-presto-pronta-paq-730-grm/_/R-00532414-00532414-200?Dy=1",
                  }
-    }
+    },                                            
+        "higienico_higienol": {
+        "nombre": "Papel Higiénico HIGIENOL Plus Doble Hoja 20 M 4 Un",        
+        "unidad": "4 Unidades x 20 mts",        
+        "categoria": "Limpieza",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/papel-higi%C3%A9nico-higienol-plus-doble-hoja-20-m-4-un/_/R-00588926-00588926-200?Dy=1",
+                 }
+    },                                            
+        "higienico_higienol2": {
+        "nombre": "Papel Higiénico HIGIENOL Plus Fusión Doble Hoja 30 M 4 Un",        
+        "unidad": "4 Unidades x 30 mts",        
+        "categoria": "Limpieza",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/papel-higi%C3%A9nico-higienol-plus-fusi%C3%B3n-doble-hoja-30-m-4-un/_/R-00580544-00580544-200?Dy=1",
+                "Dia": "https://diaonline.supermercadosdia.com.ar/papel-higienico-higienol-plus-fusion-doble-hoja-30-m-4-ud-301701/p",
+                "Jumbo": "https://www.jumbo.com.ar/papel-higienico-plus-fusion-doble-hoja-30-m-x-4-un-higienol/p",
+                "Carrefour": "https://www.carrefour.com.ar/papel-higienico-doble-hoja-higienol-plus-x4-30-mts-736162/p"
+                 }
+    },                                           
+        "higienol_gigante": {
+        "nombre": "Papel higiénico doble hoja Higienol Plus 30 mts 18 uni",        
+        "unidad": "18 Unidades x 30 mts",        
+        "categoria": "Limpieza",
+        "urls": {                
+                "Carrefour": "https://www.carrefour.com.ar/papel-higienico-doble-hoja-higienol-plus-30-mts-18-uni-761669/p"
+                 }
+    },                                                   
+        "higienol_premium": {
+        "nombre": "Papel Higiénico Higienol Balance Doble Hoja 30 M 4 Ud.",        
+        "unidad": "4 Unidades x 30 mts",        
+        "categoria": "Limpieza",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/papel-higi%C3%A9nico-higienol-premium-doble-hoja-30-m-4-un/_/R-00580867-00580867-200?Dy=1",
+                "Dia": "https://diaonline.supermercadosdia.com.ar/papel-higienico-higienol-balance-doble-hoja-30-m-4-ud-180072/p",
+                "Jumbo": "https://www.jumbo.com.ar/papel-higienico-premium-doble-hoja-30-m-x-4-un-higienol/p",
+                "Carrefour": "https://www.carrefour.com.ar/papel-higienico-higienol-premium-doble-hoja-30-mts-4-uni-736165/p"
+                 }
+    },                                           
+        "higienico_felpita": {
+        "nombre": "Papel Higiénico FELPITA Doble Hoja Paquete 4 Unidades",        
+        "unidad": "4 Unidades x 30 mts",        
+        "categoria": "Limpieza",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/papel-higi%C3%A9nico-felpita-doble-hoja-paquete-4-unidades/_/R-00467248-00467248-200?Dy=1",
+                 "Carrefour": "https://www.carrefour.com.ar/papel-higienico-doble-hoja-felpita-infinity-4-u-x-30-m/p"
+                 }
+    },                                            
+        "higienico_jumbo": {
+        "nombre": "Papel Higienico Doble Hoja 4x30 M Family Care Mp",        
+        "unidad": "4 Unidades x 30 mts",        
+        "categoria": "Limpieza",
+        "urls": {
+                "Jumbo":"https://www.jumbo.com.ar/papel-higienico-doble-hoja-4x30-m-family-care-mp-2/p"
+                 }
+    },                                            
+        "higienico_dia": {
+        "nombre": "Papel Higiénico Doble Hoja 30 mts 4 Ud.",        
+        "unidad": "4 Unidades x 30 mts",        
+        "categoria": "Limpieza",
+        "urls": {
+                "Dia":"https://diaonline.supermercadosdia.com.ar/papel-higienico-doble-hoja-30-mts-4-ud-16949/p"
+                 }
+    },                                            
+        "higienico_dia_grande": {
+        "nombre": "Papel Higiénico Doble Hoja 30mts 6 Ud",        
+        "unidad": "6 Unidades x 30 mts",        
+        "categoria": "Limpieza",
+        "urls": {
+                "Dia":"https://diaonline.supermercadosdia.com.ar/papel-higienico-doble-hoja-30mts-6-ud-834/p"
+                 }
+    },                                            
+        "higienico_carrefour": {
+        "nombre": "Papel higiénico doble hoja Carrefour Essential 4 x 30 mts",        
+        "unidad": "6 Unidades x 30 mts",        
+        "categoria": "Limpieza",
+        "urls": {
+                "Carrefour":"https://www.carrefour.com.ar/papel-higienico-doble-hoja-carrefour-essential-4-x-30-mts-597038/p"
+                 }
+    },                                            
+        "higienico_carrefour_decorado": {
+        "nombre": "Papel higiénico doble hoja deco Carrefour Essential 50 mts. x 4 uni",        
+        "unidad": "6 Unidades x 50 mts",        
+        "categoria": "Limpieza",
+        "urls": {
+                "Carrefour":"https://www.carrefour.com.ar/papel-higienico-doble-hoja-deco-carrefour-essential-50-mts-x-4-uni/p"
+                 }
+    },                                            
+        "higienico_noble": {
+        "nombre": "Papel higiénico Noble doble hoja 30 mts 4 uni",        
+        "unidad": "4 Unidades x 30 mts",        
+        "categoria": "Limpieza",
+        "urls": {
+                "Carrefour":"https://www.carrefour.com.ar/papel-higienico-noble-doble-hoja-30-mts-4-uni-751386/p"
+                 }
+    },                                            
+        "higienico_elegante": {
+        "nombre": "Papel higiénico doble hoja Elegante 4 x 30 m.",        
+        "unidad": "4 Unidades x 30 mts",        
+        "categoria": "Limpieza",
+        "urls": {
+                "Carrefour":"https://www.carrefour.com.ar/papel-higienico-doble-hoja-elegante-4-x-30-m-628282/p"
+                 }
+    },                                            
+        "higienico_elegante_rinde": {
+        "nombre": "Papel higiénico Elegante hoja doble rindemas 30 mts. x 4 uni",        
+        "unidad": "4 Unidades x 30 mts",        
+        "categoria": "Limpieza",
+        "urls": {
+                "Carrefour":"https://www.carrefour.com.ar/papel-higienico-elegante-hoja-doble-rindemas-30-mts-x-4-uni-702838/p"
+                 }
+    },  
+
 
 
 }
