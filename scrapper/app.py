@@ -232,4 +232,5 @@ def trackear_precios(debug_format = False, debug_info = False, categoria = None)
 if __name__ == "__main__":
     trackear_precios(debug_format = True,
                      debug_info = False,
-                     categoria = "Limpiezas")
+                    #  categoria = "Limpiezas"
+                     )
