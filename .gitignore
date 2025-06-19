@@ -196,8 +196,11 @@ cython_debug/
 
 
 
-# Ignorar carpeta de datos
+#Ignorar componentes especificos del script
 logs/
-data/
-
+processed/
+raw/
 notebooks/
+folder.py
+credentials.json
+
