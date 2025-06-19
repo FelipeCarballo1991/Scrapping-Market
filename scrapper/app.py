@@ -140,7 +140,10 @@ def generar_metricas(df):
     except Exception as e:
             log_warning(f"[INFO] Error la generar la metrica: {e}")
 
-def trackear_precios(debug_format = False, debug_info = False, categoria = None):
+def trackear_precios(debug_export = False,
+                     debug_format = False, 
+                     debug_info = False, 
+                     categoria = None):
 
     PATH = CSV_PATH if debug_format else PARQUET_PATH
     urls_a_usar = URLS_DEBUG if debug_info else URLS  
@@ -193,7 +196,7 @@ def trackear_precios(debug_format = False, debug_info = False, categoria = None)
 
         browser.close()
 
-# breakpoint()
+    # breakpoint()
 
     
 
@@ -201,19 +204,6 @@ def trackear_precios(debug_format = False, debug_info = False, categoria = None)
     df = pd.DataFrame(resultados, columns=[
         "fecha", "clave_config", "titulo_scrapeado", "precio", "unidad", "supermercado", "categoria","url"
     ])
-
-    # breakpoint()
-
-    # Guardar el DataFrame
-    if not os.path.exists(PATH):
-
-        if debug_format:                 
-            df.to_csv(PATH, mode='w', index=False, header=True, encoding="utf-8-sig")
-        else:
-            df.to_parquet(PATH, index=False)
-
-    else:
-        pass
 
     cantidad_productos = int(df[['clave_config']].nunique().iloc[0])
 
@@ -224,7 +214,23 @@ def trackear_precios(debug_format = False, debug_info = False, categoria = None)
     print("✅ Métricas generadas")
 
 
-    print(f"✅ Precios guardados en: {os.path.abspath(PATH)}")
+    if debug_export:
+        # Guardar el DataFrame
+        if not os.path.exists(PATH):
+
+            if debug_format:                 
+                df.to_csv(PATH, mode='w', index=False, header=True, encoding="utf-8-sig")
+            else:
+                df.to_parquet(PATH, index=False)
+
+        else:
+            pass
+        
+        print(f"✅ Precios guardados en: {os.path.abspath(PATH)}")
+
+    else:
+        ...
+        #Aca va el modulo que carga en el drive
     
 
 
