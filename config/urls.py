@@ -765,7 +765,7 @@ URLS = {
         "higienico_elegante_rinde": {
         "nombre": "Papel higiénico Elegante hoja doble rindemas 30 mts. x 4 uni",        
         "unidad": "4 Unidades x 30 mts",        
-        "categoria": "Limpieza",
+        "categoria": "Limpiezas",
         "urls": {
                 "Carrefour":"https://www.carrefour.com.ar/papel-higienico-elegante-hoja-doble-rindemas-30-mts-x-4-uni-702838/p"
                  }

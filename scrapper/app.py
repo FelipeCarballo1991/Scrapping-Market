@@ -30,6 +30,15 @@ def log_error(msg):
         f.write(f"[{timestamp}] {msg}\n")
 
 
+def filtrar_por_categoria(url, categoria):
+    filtrados = {k: v for k, v in url.items() if v['categoria'] == categoria}
+    if filtrados:
+        return filtrados
+    else:
+        print("⚠️ No se encontraron productos en la categoría:", categoria)
+        sys.exit(1)
+
+
 def obtener_precio(page, url):
     try:
         page.goto(url, timeout=60000)       
@@ -40,7 +49,6 @@ def obtener_precio(page, url):
         #     f.write(html)
         
         # breakpoint()
-
         # Selectores posibles para el título (Coto, Dia, etc.)
         titulo = None
         selectores_titulo = [
@@ -119,11 +127,27 @@ def obtener_precio(page, url):
         return None, None
 
 
-def trackear_precios(debug_format = False, debug_info = False):
+def generar_metricas(df):
+
+    try:
+        
+        df[['cant_unidades', 'largo_mts']] = df['unidad'].str.extract(r'(\d+)\s+Unidades\s+x\s+(\d+)\s+mts')    
+        df['cant_unidades'] = df['cant_unidades'].apply(lambda x: int(x) if pd.notna(x) else x)
+        df['largo_mts'] = df['largo_mts'].apply(lambda x: int(x) if pd.notna(x) else x)
+        df["precio_rollo"] = round(df["precio"] / df["cant_unidades"],2)
+        df["precio_metro"] = round(df["precio_rollo"]/ df["largo_mts"],2)
+    
+    except Exception as e:
+            log_warning(f"[INFO] Error la generar la metrica: {e}")
+
+def trackear_precios(debug_format = False, debug_info = False, categoria = None):
 
     PATH = CSV_PATH if debug_format else PARQUET_PATH
-    urls_a_usar = URLS_DEBUG if debug_info else URLS 
-    
+    urls_a_usar = URLS_DEBUG if debug_info else URLS  
+
+    if categoria != None:
+        urls_a_usar = filtrar_por_categoria(URLS,categoria)
+      
 
     resultados = []    
 
@@ -194,6 +218,12 @@ def trackear_precios(debug_format = False, debug_info = False):
     cantidad_productos = int(df[['clave_config']].nunique().iloc[0])
 
     print(f"Cantidad de productos scrapeados: {cantidad_productos}")
+
+    print("📏 Generando métricas particulares...")
+    df = generar_metricas(df)
+    print("✅ Métricas generadas")
+
+
     print(f"✅ Precios guardados en: {os.path.abspath(PATH)}")
     
 
@@ -201,4 +231,5 @@ def trackear_precios(debug_format = False, debug_info = False):
 
 if __name__ == "__main__":
     trackear_precios(debug_format = True,
-                     debug_info = True)
+                     debug_info = False,
+                     categoria = "Limpiezas")
