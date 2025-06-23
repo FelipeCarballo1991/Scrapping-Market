@@ -7,7 +7,20 @@ from playwright.sync_api import sync_playwright
 # Ajuste del path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from config.urls import URLS, FECHA, FECHA_COMPLETA, URLS_DEBUG
-from config.folder import FOLDER_ID
+# from config.folder import FOLDER_ID
+
+# Prioridad 1: variable de entorno (GitHub Actions)
+# Prioridad 2: importar desde archivo local si existe (tu PC)
+try:
+    FOLDER_ID = os.environ["DRIVE_FOLDER_ID"]
+except KeyError:
+    try:
+        from config.folder import FOLDER_ID
+    except ImportError:
+        raise Exception("❌ No se encontró FOLDER_ID ni como variable de entorno ni en folder.py")
+
+
+
 from etl.load.load import guardar_localmente, subir_df_a_google_sheet
 from etl.transform.transform import generar_metricas
 
