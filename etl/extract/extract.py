@@ -8,10 +8,19 @@ from playwright.sync_api import sync_playwright
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from config.urls import URLS, FECHA, FECHA_COMPLETA, URLS_DEBUG
 from config.folder import FOLDER_ID
-from data.utils.export_tools import guardar_localmente, subir_df_a_google_sheet
+from etl.load.load import guardar_localmente, subir_df_a_google_sheet
+from etl.transform.transform import generar_metricas
+
+
+
 
 # Rutas
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Crear carpetas necesarias si no existen
+os.makedirs(os.path.join(BASE_DIR, "..", "data", "raw"), exist_ok=True)
+os.makedirs(os.path.join(BASE_DIR, "..", "logs"), exist_ok=True)
+
 CSV_PATH = os.path.join(BASE_DIR, "..", "data", "raw", f"Precios_{FECHA}.csv")
 PARQUET_PATH = os.path.join(BASE_DIR, "..", "data", "raw", f"Precios_{FECHA}.parquet")
 LOG_PATH_ERROR = os.path.join(BASE_DIR, "..", "logs", "error_log.txt")
@@ -101,17 +110,7 @@ def obtener_precio(page, url):
         log_error(f"Error al scrapear {url}: {e}")
         return None, None
 
-# Métricas
-def generar_metricas(df):
-    try:
-        df[['cant_unidades', 'largo_mts']] = df['unidad'].str.extract(r'(\d+)\s+Unidades\s+x\s+(\d+)\s+mts')
-        df['cant_unidades'] = df['cant_unidades'].apply(lambda x: int(x) if pd.notna(x) else x)
-        df['largo_mts'] = df['largo_mts'].apply(lambda x: int(x) if pd.notna(x) else x)
-        df["precio_rollo"] = round(df["precio"] / df["cant_unidades"], 2)
-        df["precio_metro"] = round(df["precio_rollo"] / df["largo_mts"], 2)
-    except Exception as e:
-        log_warning(f"[INFO] Error al generar la métrica: {e}")
-    return df
+
 
 # Función principal
 def extract(debug_export=True, debug_format=False, debug_info=False, categoria=None, debug_drive=False):
@@ -128,7 +127,7 @@ def extract(debug_export=True, debug_format=False, debug_info=False, categoria=N
         urls_a_usar = filtrar_por_categoria(URLS, categoria)
 
     resultados = []
-
+    
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=False, args=[
             "--window-position=-32000,-32000",
@@ -152,16 +151,24 @@ def extract(debug_export=True, debug_format=False, debug_info=False, categoria=N
                         FECHA, datos["nombre"], nombre, precio, datos["unidad"], supermercado, datos["categoria"], url
                     ])
                 else:
-                    log_error(f"No se pudo obtener el precio para: {datos['nombre']} | {url}")
+                    log_error(f"[ERROR] No se pudo obtener el precio para: {datos['nombre']} | {url}")
         browser.close()
 
-    df = pd.DataFrame(resultados, columns=[
+    
+    try:
+        df = pd.DataFrame(resultados, columns=[
         "fecha", "clave_config", "titulo_scrapeado", "precio", "unidad", "supermercado", "categoria", "url"
-    ])
-    print(f"Cantidad de productos scrapeados: {df['clave_config'].nunique()}")
-    print("📏 Generando métricas particulares...")
-    df = generar_metricas(df)
-    print("✅ Métricas generadas")
+        ])
+        print(f"Cantidad de productos scrapeados: {df['clave_config'].nunique()}")
+        print("📏 Generando métricas particulares...")
+        df = generar_metricas(df)
+        print("✅ Métricas generadas")
+    except Exception as e:
+        print(f"No se pudo generar las metricas. Error: {e}")
+        log_error(f"No se pudo generar las metricas. Error: {e}")
+        sys.exit(1)
+
+    
 
     if debug_export:
         guardar_localmente(df, PATH, formato_csv=debug_format)

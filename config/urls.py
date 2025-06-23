@@ -11,7 +11,7 @@ URLS_DEBUG = {
         "unidad": "kg",        
         "categoria": "Verdura",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/brocoli-x-kg/_/R-00000598-00000598-200",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/brocoli-x-kg/_/R-00000598-00000598-200asdasd",
                 }
 }
 }
@@ -767,10 +767,49 @@ URLS = {
         "higienico_elegante_rinde": {
         "nombre": "Papel higiénico Elegante hoja doble rindemas 30 mts. x 4 uni",        
         "unidad": "4 Unidades x 30 mts",        
-        "categoria": "Limpiezas",
+        "categoria": "Limpieza",
         "urls": {
                 "Carrefour":"https://www.carrefour.com.ar/papel-higienico-elegante-hoja-doble-rindemas-30-mts-x-4-uni-702838/p"
                  }
+    },                                           
+        "rollo_cocina_campanita": {
+        "nombre": "Rollo Cocina Campanita 100 panios",        
+        "unidad": "2",        
+        "categoria": "Limpieza",
+        "urls": {
+                "Coto":"https://www.cotodigital.com.ar/sitios/cdigi/productos/rollo-de-cocina-campanita-100-pa%C3%B1os-paquete-2-unidades/_/R-00272112-00272112-200?Dy=1"
+                 }
+    },                                           
+        "rollo_cocina_sussex": {
+        "nombre": "Rollo Cocina Sussex 50 panios",        
+        "unidad": "3",        
+        "categoria": "Limpieza",
+        "urls": {
+                "Coto":"https://www.cotodigital.com.ar/sitios/cdigi/productos/rollo-de-cocina-campanita-100-pa%C3%B1os-paquete-2-unidades/_/R-00272112-00272112-200?Dy=1",
+                "Jumbo": "https://www.jumbo.com.ar/rollo-cocina-clasico-50-panos-3-un-sussex/p",
+                "Dia": "https://diaonline.supermercadosdia.com.ar/rollo-cocina-sussex-clasico-50-panos-3-ud-88515/p"
+                 }
+    },                                           
+        "rollo_cocina_sussex2": {
+        "nombre": "Rollo Cocina Sussex 60 panios",        
+        "unidad": "3",        
+        "categoria": "Limpieza",
+        "urls": {
+                "Coto":"https://www.cotodigital.com.ar/sitios/cdigi/productos/rollo-de-cocina-sussex-ultra-60-pa%C3%B1os-3-un/_/R-00580697-00580697-200?Dy=1",
+                
+                 }
+    },                                         
+        "rollo_cocina_sussex3": {
+        "nombre": "Rollo Cocina Sussex 100 panios",        
+        "unidad": "3",        
+        "categoria": "Limpieza",
+        "urls": {
+                "Jumbo":"https://www.jumbo.com.ar/rollo-de-cocina-ultra-100-panos-3-un-sussex/p",
+                
+                 }
     },
+
+
+
 
 }

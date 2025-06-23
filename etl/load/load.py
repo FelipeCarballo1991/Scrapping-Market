@@ -8,7 +8,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 def guardar_localmente(df, path, formato_csv=True):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     if formato_csv:
-        df.to_csv(path, mode='w', index=False, header=True, encoding="utf-8-sig")
+        df.to_csv(path, mode='w', index=False, header=True, encoding="utf-8-sig")        
     else:
         df.to_parquet(path, index=False)
     print(f"✅ Archivo guardado en: {os.path.abspath(path)}")
@@ -47,3 +47,8 @@ def subir_df_a_google_sheet(df, nombre_hoja, folder_id, ruta_credenciales):
     worksheet.clear()
     set_with_dataframe(worksheet, df)
     print(f"📤 Subido a Google Sheet: https://docs.google.com/spreadsheets/d/{spreadsheet.id}")
+
+
+# Ejecución
+if __name__ == "__main__":
+    ...
