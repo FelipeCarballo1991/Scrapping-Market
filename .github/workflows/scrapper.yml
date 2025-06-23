@@ -30,4 +30,4 @@ jobs:
         run: echo "🔐 Se cargó la variable de entorno para Google Sheets"
 
       - name: Ejecutar el scraper
-        run: python scraper/run_pipeline.py
+        run: python scrapper/run_pipeline.py
