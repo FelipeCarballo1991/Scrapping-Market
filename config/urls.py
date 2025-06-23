@@ -11,7 +11,7 @@ URLS_DEBUG = {
         "unidad": "kg",        
         "categoria": "Verdura",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/brocoli-x-kg/_/R-00000598-00000598-200asdasd",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/brocoli-x-kg/_/R-00000598-00000598-200",
                 }
 }
 }
@@ -807,7 +807,7 @@ URLS = {
                 "Jumbo":"https://www.jumbo.com.ar/rollo-de-cocina-ultra-100-panos-3-un-sussex/p",
                 
                  }
-    },
+    }
 
 
 
