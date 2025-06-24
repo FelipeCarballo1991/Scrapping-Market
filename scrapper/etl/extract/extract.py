@@ -13,6 +13,11 @@ from config.urls import URLS, FECHA, FECHA_COMPLETA, URLS_DEBUG
 
 # Prioridad 1: variable de entorno (GitHub Actions)
 # Prioridad 2: importar desde archivo local si existe (tu PC)
+
+
+CREDENTIALS_PATH = os.environ.get("GSHEET_CREDENTIALS_PATH", "credentials.json")
+CREDENTIALS_PATH = os.path.abspath(CREDENTIALS_PATH)
+
 try:
     FOLDER_ID = os.environ["DRIVE_FOLDER_ID"]
 except KeyError:

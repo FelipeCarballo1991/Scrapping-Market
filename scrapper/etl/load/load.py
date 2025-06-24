@@ -5,6 +5,7 @@ from googleapiclient.discovery import build
 from oauth2client.service_account import ServiceAccountCredentials
 
 
+
 def guardar_localmente(df, path, formato_csv=True):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     if formato_csv:
