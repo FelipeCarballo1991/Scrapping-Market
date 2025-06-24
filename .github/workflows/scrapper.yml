@@ -28,6 +28,7 @@ jobs:
         env:
           GSHEET_CREDENTIALS_JSON: ${{ secrets.GSHEET_CREDENTIALS_JSON }}
           DRIVE_FOLDER_ID: ${{ vars.DRIVE_FOLDER_ID }}
+          HEADLESS: true
         run: |
           echo "🔐 Se ejecuta el scraper con FOLDER_ID: $DRIVE_FOLDER_ID"
           python scrapper/run_pipeline.py
