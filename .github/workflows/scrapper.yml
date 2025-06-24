@@ -24,9 +24,12 @@ jobs:
           pip install -r scrapper/requirements.txt
           python -m playwright install
 
+      - name: 📄 Crear archivo credentials.json desde secreto
+          run: |
+            echo "${{ secrets.GSHEET_CREDENTIALS_JSON }}" > credentials.json
+
       - name: Ejecutar el scraper
-        env:
-          GSHEET_CREDENTIALS_JSON: ${{ secrets.GSHEET_CREDENTIALS_JSON }}
+        env:          }
           DRIVE_FOLDER_ID: ${{ vars.DRIVE_FOLDER_ID }}
           HEADLESS: true
         run: |
