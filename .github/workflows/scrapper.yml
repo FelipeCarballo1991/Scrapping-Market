@@ -31,4 +31,4 @@ jobs:
           HEADLESS: true
         run: |
           echo "🔐 Se ejecuta el scraper con FOLDER_ID: $DRIVE_FOLDER_ID"
-          python ./scrapper/run_pipeline.py --drive
+          python ./scrapper/run_pipeline.py --drive --debug

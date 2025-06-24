@@ -212,8 +212,8 @@ def extract(debug_export=True, debug_format=False, debug_info=False, categoria=N
 
     if debug_drive:
         nombre_hoja = f"Precios_{FECHA_COMPLETA}"
-        ruta_credenciales = os.path.join(os.path.dirname(__file__), "credentials.json")
-        subir_df_a_google_sheet(df, nombre_hoja, FOLDER_ID, ruta_credenciales)
+        # ruta_credenciales = os.path.join(os.path.dirname(__file__), "credentials.json")
+        subir_df_a_google_sheet(df, nombre_hoja, FOLDER_ID, CREDENTIALS_PATH)
 
     print("--------------------------------------------------------------------------")
     print(f"⏳ FIN DE EJECUCION: {datetime.now().strftime('%H:%M:%S')}")
