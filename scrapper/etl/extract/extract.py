@@ -142,13 +142,23 @@ def extract(debug_export=True, debug_format=False, debug_info=False, categoria=N
     resultados = []
     
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False, args=[
+        
+        try:
+            # headless = os.environ.get("HEADLESS", "true").lower() == "true"
+            browser = p.chromium.launch(headless=True)
+        
+        except:
+            browser = p.chromium.launch(headless=False, args=[
             "--window-position=-32000,-32000",
             "--window-size=800,600",
             "--disable-infobars",
             "--no-sandbox",
             "--disable-gpu"
-        ])
+            ])
+        
+            
+
+       
         page = browser.new_page()
         page.evaluate("""() => {
             Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
