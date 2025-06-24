@@ -27,6 +27,7 @@ jobs:
       - name: Cargar credencial para Google Sheets
         env:
           GSHEET_CREDENTIALS_JSON: ${{ secrets.GSHEET_CREDENTIALS_JSON }}
+          DRIVE_FOLDER_ID: ${{ vars.DRIVE_FOLDER_ID }}
         run: echo "🔐 Se cargó la variable de entorno para Google Sheets"
 
       - name: Ejecutar el scraper
