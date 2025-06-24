@@ -3,6 +3,8 @@ import os
 import pandas as pd
 from datetime import datetime
 from playwright.sync_api import sync_playwright
+from dotenv import load_dotenv
+load_dotenv()
 
 # Ajuste del path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -71,16 +73,18 @@ def obtener_precio(page, url):
             'span.vtex-store-components-3-x-productBrand ',
             'span.vtex-store-components-3-x-productBrand.vtex-store-components-3-x-productBrand--quickview'
         ]
+        errores_titulo = []  # lista para registrar errores por selector
         for selector in selectores_titulo:
             try:
-                page.wait_for_selector(selector, timeout=10000)
+                page.wait_for_selector(selector, timeout=20000)
                 titulo = page.query_selector(selector).inner_text().strip()
                 break
-            except:
+            except Exception as e:
+                errores_titulo.append(f"{selector} → {e.__class__.__name__}: {e}")
                 continue
 
         if not titulo:
-            log_error(f"[ERROR] No se encontró el título en {url}")
+            log_error(f"[ERROR] No se encontró el título en {url}\nDetalles:\n" + "\n".join(errores_titulo))
             return None, None
 
         texto_estado = page.inner_text('body')
@@ -99,6 +103,7 @@ def obtener_precio(page, url):
             'div.vtex-price-format-gallery',
             "span[class*='product-price-0-x-currencyContainer']"
         ]
+        errores_precio = []  # lista para registrar errores por selector
         for selector in selectores_posibles:
             try:
                 page.wait_for_selector(selector, timeout=10000)
@@ -109,11 +114,12 @@ def obtener_precio(page, url):
                 else:
                     precio_raw = page.query_selector(selector).inner_text().strip()
                 break
-            except:
+            except Exception as e:
+                errores_precio.append(f"{selector} → {e.__class__.__name__}: {e}")
                 continue
 
         if not precio_raw:
-            log_error(f"[ERROR] No se encontró el precio en {url} con los selectores: {selectores_posibles}")
+            log_error(f"[ERROR] No se encontró el precio en {url}\nDetalles:\n" + "\n".join(errores_precio))
             return titulo, None
 
         precio = float(precio_raw.replace("$", "").replace(".", "").replace(",", "."))
@@ -140,24 +146,23 @@ def extract(debug_export=True, debug_format=False, debug_info=False, categoria=N
         urls_a_usar = filtrar_por_categoria(URLS, categoria)
 
     resultados = []
-    
-    with sync_playwright() as p:
-        
-        try:
-            # headless = os.environ.get("HEADLESS", "true").lower() == "true"
-            browser = p.chromium.launch(headless=True)
-        
-        except:
-            browser = p.chromium.launch(headless=False, args=[
-            "--window-position=-32000,-32000",
-            "--window-size=800,600",
-            "--disable-infobars",
-            "--no-sandbox",
-            "--disable-gpu"
-            ])
-        
-            
 
+   
+    
+    print(f"[DEBUG] HEADLESS crudo: {os.environ.get('HEADLESS')}")  
+
+    HEADLESS = os.environ.get("HEADLESS", "true").lower() == "true"
+    print(f"[DEBUG] HEADLESS final: {HEADLESS}")  
+    with sync_playwright() as p:          
+    
+        browser = p.chromium.launch(headless=HEADLESS, args=[
+        "--window-position=-32000,-32000",
+        "--window-size=800,600",
+        "--disable-infobars",
+        "--no-sandbox",
+        "--disable-gpu"
+        ])
+    
        
         page = browser.new_page()
         page.evaluate("""() => {
