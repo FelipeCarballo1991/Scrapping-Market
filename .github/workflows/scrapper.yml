@@ -2,8 +2,8 @@ name: Scraping Diario + Exportar a Google Sheets
 
 on:
   schedule:
-    - cron: "0 9 * * *"  # Todos los días a las 9:00 UTC
-  workflow_dispatch:      # También te permite ejecutarlo a mano
+    - cron: "0 12 * * *"  # Todos los días a las 9:00 UTC → 9:00 AM Argentina
+  workflow_dispatch:
 
 jobs:
   run-scraper:
@@ -25,12 +25,13 @@ jobs:
           python -m playwright install
 
       - name: 📄 Crear archivo credentials.json desde secreto
-          run: |
-            echo "${{ secrets.GSHEET_CREDENTIALS_JSON }}" > credentials.json
+        run: |
+          echo "${{ secrets.GSHEET_CREDENTIALS_JSON }}" > credentials.json
 
       - name: Ejecutar el scraper
         env:
           DRIVE_FOLDER_ID: ${{ vars.DRIVE_FOLDER_ID }}
+          GSHEET_CREDENTIALS_PATH: credentials.json
           HEADLESS: true
         run: |
           echo "🔐 Se ejecuta el scraper con FOLDER_ID: $DRIVE_FOLDER_ID"
