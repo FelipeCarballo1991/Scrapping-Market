@@ -65,6 +65,7 @@ def filtrar_por_categoria(url, categoria):
 def obtener_precio(page, url):
     try:
         page.goto(url, timeout=60000)
+        page.wait_for_load_state("networkidle")  # ⏳ espera que todo se cargue
         titulo = None
         selectores_titulo = [
             'h2.title.text-dark',
@@ -77,6 +78,7 @@ def obtener_precio(page, url):
         for selector in selectores_titulo:
             try:
                 page.wait_for_selector(selector, timeout=20000)
+
                 titulo = page.query_selector(selector).inner_text().strip()
                 break
             except Exception as e:
@@ -147,12 +149,8 @@ def extract(debug_export=True, debug_format=False, debug_info=False, categoria=N
 
     resultados = []
 
-   
-    
-    print(f"[DEBUG] HEADLESS crudo: {os.environ.get('HEADLESS')}")  
-
     HEADLESS = os.environ.get("HEADLESS", "true").lower() == "true"
-    print(f"[DEBUG] HEADLESS final: {HEADLESS}")  
+     
     with sync_playwright() as p:          
     
         browser = p.chromium.launch(headless=HEADLESS, args=[
@@ -160,11 +158,17 @@ def extract(debug_export=True, debug_format=False, debug_info=False, categoria=N
         "--window-size=800,600",
         "--disable-infobars",
         "--no-sandbox",
-        "--disable-gpu"
+        "--disable-gpu",
+        "--disable-blink-features=AutomationControlled"
         ])
+
+        context = browser.new_context(
+        viewport={"width": 1280, "height": 800},
+        user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
+        )
     
        
-        page = browser.new_page()
+        page = context.new_page()
         page.evaluate("""() => {
             Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
         }""")

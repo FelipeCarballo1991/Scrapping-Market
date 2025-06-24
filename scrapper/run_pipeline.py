@@ -22,7 +22,6 @@ if __name__ == "__main__":
         debug_drive=args.drive
     )
 
-
     #     extract(
     #     debug_export=False,        # Guardar localmente
     #     debug_format=True,        # CSV
