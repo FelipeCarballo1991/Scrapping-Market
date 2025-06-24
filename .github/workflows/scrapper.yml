@@ -24,11 +24,10 @@ jobs:
           pip install -r scrapper/requirements.txt
           python -m playwright install
 
-      - name: Cargar credencial para Google Sheets
+      - name: Ejecutar el scraper
         env:
           GSHEET_CREDENTIALS_JSON: ${{ secrets.GSHEET_CREDENTIALS_JSON }}
           DRIVE_FOLDER_ID: ${{ vars.DRIVE_FOLDER_ID }}
-        run: echo "🔐 Se cargó la variable de entorno para Google Sheets"
-
-      - name: Ejecutar el scraper
-        run: python scrapper/run_pipeline.py
+        run: |
+          echo "🔐 Se ejecuta el scraper con FOLDER_ID: $DRIVE_FOLDER_ID"
+          python scrapper/run_pipeline.py
