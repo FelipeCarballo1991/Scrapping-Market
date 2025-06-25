@@ -26,11 +26,7 @@ jobs:
 
       - name: Decodificar y guardar credentials.json desde secreto en base64
         run: |
-          echo "${{ secrets.GSHEET_CREDENTIALS_JSON }}" | base64 -d > credentials.json
-      
-      - name: Ver contenido del credentials.json
-        run: |
-          cat credentials.json
+          echo "${{ secrets.GSHEET_CREDENTIALS_JSON }}" | base64 -d > credentials.json    
 
       - name: Ejecutar el scraper
         env:
@@ -39,4 +35,4 @@ jobs:
           HEADLESS: true
         run: |
           echo "🔐 Se ejecuta el scraper con FOLDER_ID: $DRIVE_FOLDER_ID"
-          python ./scrapper/run_pipeline.py --drive --debug
+          python ./scrapper/run_pipeline.py --drive
