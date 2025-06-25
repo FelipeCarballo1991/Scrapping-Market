@@ -27,6 +27,10 @@ jobs:
       - name: 📄 Crear archivo credentials.json desde secreto
         run: |
           echo "${{ secrets.GSHEET_CREDENTIALS_JSON }}" > credentials.json
+      
+      - name: Ver contenido del credentials.json
+        run: |
+          cat credentials.json
 
       - name: Ejecutar el scraper
         env:
