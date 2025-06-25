@@ -36,3 +36,6 @@ jobs:
         run: |
           echo "🔐 Se ejecuta el scraper con FOLDER_ID: $DRIVE_FOLDER_ID"
           python ./scrapper/run_pipeline.py --drive
+          
+      - name: Borrar credentials.json
+        run: rm credentials.json
