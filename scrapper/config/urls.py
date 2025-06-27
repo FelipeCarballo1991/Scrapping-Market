@@ -577,13 +577,13 @@ URLS = {
                 }
     },                                   
         "yogurt_ilolay_vainilla": {
-        "nombre": "Yogurt Ilolay Vainilla",        
-        "unidad": "gr",        
+        "nombre": "Yogurt Ilolay Vainilla 900  gr",        
+        "unidad": "0.9",        
         "categoria": "Lacteo",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/yogur-entero-ilolay-vainilla-bebible-900g/_/R-00013922-00013922-200",
                 # "Dia": "",
-                # "Jumbo": "",
+                "Jumbo": "https://www.jumbo.com.ar/yogur-vainilla-sachet-x-900-gr-ilolay/p",
                 # "Carrefour": ""
                 
                 }
@@ -602,13 +602,25 @@ URLS = {
     },                                         
         "yogurt_ilolay_frutilla_descremado": {
         "nombre": "Yogurt Ilolay Frutilla Descremado",        
-        "unidad": "gr",        
+        "unidad": "1",        
         "categoria": "Lacteo",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/yogur-descremado-ilolay-frutilla-bebible-1kg/_/R-00483170-00483170-200",
                 # "Dia": "",
                 # "Jumbo": "",
                 # "Carrefour": ""
+                
+                }
+    },                                         
+        "yogurt_ilolay_frutilla_descremado": {
+        "nombre": "Yogurt Ilolay Frutilla Descremado 900 gr",        
+        "unidad": "0.9",        
+        "categoria": "Lacteo",
+        "urls": {
+                # "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/yogur-descremado-ilolay-frutilla-bebible-1kg/_/R-00483170-00483170-200",
+                # "Dia": "",
+                "Jumbo": "https://www.jumbo.com.ar/yogur-descremado-frutilla-sachet-x-900-gr-ilolay/p",
+                "Carrefour": "https://www.carrefour.com.ar/yogur-bebible-descremado-de-frutilla-ilolay-en-sachet-900-g-739069/p"
                 
                 }
     },                                           
@@ -792,98 +804,134 @@ URLS = {
     },                                            
         "bizcochuelo_morixe": {
         "nombre": "Bizcochuelo Morixe Chocolate",        
-        "unidad": "gr",        
+        "unidad": "0.540",        
         "categoria": "Almacen",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/bizcochuelo-sabor-chocolate-morixe-540-grm/_/R-00541561-00541561-200?Dy=1",
+                "Dia": "https://diaonline.supermercadosdia.com.ar/bizcochuelo-chocolate-morixe-540-gr-1072/p",
+                "Jumbo": "https://www.jumbo.com.ar/bizcochuelo-chocolate-morixe-540-gr/p",
+                "Carrefour": "https://www.carrefour.com.ar/bizcochuelo-morixe-de-chocolate-540-g-705873/p"
                 }
     },                                            
         "arroz_molinos_ala_grande": {
         "nombre": "Arroz Molinos Ala 1 Kg",        
-        "unidad": "kg",        
+        "unidad": "1",        
         "categoria": "Almacen",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/arroz-largo-fino-molinos-ala-paquete-1-kg/_/R-00002270-00002270-200?Dy=1",
+                "Dia": "https://diaonline.supermercadosdia.com.ar/arroz-largo-fino-ala-1-kg-25417/p",
+                "Jumbo": "https://www.jumbo.com.ar/arroz-ala-grano-largo-fino-1-kg/p",
+                "Carrefour": "https://www.carrefour.com.ar/arroz-largo-fino-molinos-ala-1-kg/p"
                 }
     },                                            
         "arroz_molinos_ala_chico": {
         "nombre": "Arroz Molinos Ala 500 gr",        
-        "unidad": "gr",        
+        "unidad": "0.5",        
         "categoria": "Almacen",
         "urls": {
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/arroz-largo-fino-molinos-ala-paquete-1-kg/_/R-00002270-00002270-200?Dy=1",
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/arroz-largo-fino-molinos-ala-paquete-500-gr/_/R-00029048-00029048-200?Dy=1&idSucursal=200",
+                "Dia": "https://diaonline.supermercadosdia.com.ar/arroz-largo-fino-molinos-ala-500-gr-298635/p",
+                "Jumbo": "https://www.jumbo.com.ar/arroz-ala-grano-largo-fino-500-gr/p",
+                "Carrefour": "https://www.carrefour.com.ar/arroz-molinos-ala-largo-fino-00000-bolsa-500-g/p"
                 }
     },                                            
         "harina_pizza_morixe": {
         "nombre": "Harina 0000 Morixe",        
-        "unidad": "gr",        
+        "unidad": "1",        
         "categoria": "Almacen",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/harina-trigo-0000-morixe-1kg/_/R-00480052-00480052-200?Dy=1",
+                "Dia": "https://diaonline.supermercadosdia.com.ar/harina-0000-morixe-1-kg-258543/p",
+                "Jumbo": "https://www.jumbo.com.ar/harina-0000-morixe-1-kg/p",
+                "Carrefour": "https://www.carrefour.com.ar/harina-de-trigo-morixe-0000-1-kg/p"
                 }
     },                                            
         "harina_pizza_favorita": {
         "nombre": "Harina 0000 Favorita",        
-        "unidad": "kg",        
+        "unidad": "1",        
         "categoria": "Almacen",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/harina-trigo-0000-fortificado-con-hierro-favorita-1kg/_/R-00577876-00577876-200?Dy=1",
+                "Dia": "https://diaonline.supermercadosdia.com.ar/harina-0000-con-vitaminas-favorita-1-kg-300779/p",
+                "Jumbo": "https://www.jumbo.com.ar/harina-0000-vit-x-1-kg-favorita/p",
+                "Carrefour": "https://www.carrefour.com.ar/harina-de-trigo-0000-favorita-fortificada-1-kg-733197/p"
                 }
     },                                            
         "harina_pizza_blancaflor": {
         "nombre": "Harina 0000 Blancaflor",        
-        "unidad": "kg",        
+        "unidad": "1",        
         "categoria": "Almacen",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/harina-trigo-0000-blancaflor-1kg/_/R-00581616-00581616-200?Dy=1",
+                # "Dia": "",
+                "Jumbo": "https://www.jumbo.com.ar/harina-0000-fort-blancaflor-x-1kg/p",
+                "Carrefour": "https://www.carrefour.com.ar/harina-de-trigo-0000-blancaflor-1-kg-735295/p"
                 }
     },                                            
         "harina_pizza_pureza": {
         "nombre": "Harina 0000 Pureza",        
-        "unidad": "kg",        
+        "unidad": "1",        
         "categoria": "Almacen",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/harina-de-trigo-pureza-0000-paquete-1-kg/_/R-00253696-00253696-200?Dy=1",
+                "Dia": "https://diaonline.supermercadosdia.com.ar/harina-0000-pureza-ultra-refinada-1-kg-167177/p",
+                "Jumbo": "https://www.jumbo.com.ar/harina-pureza-ultra-refinada-1-kg/p",
+                "Carrefour": "https://www.carrefour.com.ar/harina-de-trigo-pureza-0000-1-kg-551284/p"
                 }
     },                                            
         "tomate_lata_campanola": {
         "nombre": "Tomate Perita La Campanola Lata",        
-        "unidad": "unidad",        
+        "unidad": "0.4",        
         "categoria": "Almacen",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/tomate-perita-la-campagnola-lata-400-gr/_/R-00046126-00046126-200?Dy=1",
+                "Dia": "https://diaonline.supermercadosdia.com.ar/tomate-pelado-perita-la-campagnola-400-gr-59422/p",
+                # "Jumbo": "",
+                # "Carrefour": ""
                 }
     },                                            
-        "lentejas_coto": {
-        "nombre": "Lentejas Coto",        
-        "unidad": "unidad",        
+        "lentejas_genericas": {
+        "nombre": "Lentejas Genericas",        
+        "unidad": "0.4",        
         "categoria": "Almacen",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/lentejas-coto-bolsa-400-gr/_/R-00171605-00171605-200?Dy=1",
+                "Dia": "https://diaonline.supermercadosdia.com.ar/lentejas-dia-400-gr-292388/p",
+                "Jumbo": "https://www.jumbo.com.ar/lentejas-secas-400-grs-cuisine-co/p",
+                "Carrefour": "https://www.carrefour.com.ar/lentejas-carrefour-classic-400-g-738618/p"
                 }
     },                                            
         "lentejas_elio": {
         "nombre": "Lentejas Don Elio",        
-        "unidad": "unidad",        
+        "unidad": "0.4",        
         "categoria": "Almacen",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/lentejas-elio-bolsa-400-gr/_/R-00027685-00027685-200?Dy=1",
+                # "Dia": "",
+                # "Jumbo": "",
+                # "Carrefour": ""
                 }
     },                                            
         "polenta_morixe": {
         "nombre": "Polenta Morixe",        
-        "unidad": "kg",        
+        "unidad": "1",        
         "categoria": "Almacen",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/polenta-morixe-1kg/_/R-00511516-00511516-200?Dy=1",
+                # "Dia": "",
+                # "Jumbo": "",
+                "Carrefour": "https://www.carrefour.com.ar/polenta-instantanea-morixe-paquete-1-kg/p"
                 }
     },                                            
         "polenta_presto": {
         "nombre": "Polenta Presto Pronta",        
-        "unidad": "gr",        
+        "unidad": "0.730",        
         "categoria": "Almacen",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/polenta-instantanea-presto-pronta-paq-730-grm/_/R-00532414-00532414-200?Dy=1",
+                "Dia": "https://diaonline.supermercadosdia.com.ar/polenta-instantanea-prestopronta-730-gr-285636/p",
+                # "Jumbo": "",
+                "Carrefour": "https://www.carrefour.com.ar/polenta-instantanea-presto-pronta-bolsa-730-g-697807/p"
                  }
     },                                            
         "higienico_higienol": {
@@ -892,6 +940,9 @@ URLS = {
         "categoria": "Limpieza",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/papel-higi%C3%A9nico-higienol-plus-doble-hoja-20-m-4-un/_/R-00588926-00588926-200?Dy=1",
+                # "Dia": "",
+                "Jumbo": "https://www.jumbo.com.ar/papel-higienico-plus-doble-hoja-20-m-x-4-un-higienol/p",
+                "Carrefour": "https://www.carrefour.com.ar/papel-higienico-higienol-plus-doble-hoja-20-mts-4-uni-742467/p"
                  }
     },                                            
         "higienico_higienol2": {
@@ -910,6 +961,9 @@ URLS = {
         "unidad": "18 Unidades x 30 mts",        
         "categoria": "Limpieza",
         "urls": {                
+                "Carrefour": "https://www.carrefour.com.ar/papel-higienico-doble-hoja-higienol-plus-30-mts-18-uni-761669/p",
+                # "Dia": "",
+                # "Jumbo": "",
                 "Carrefour": "https://www.carrefour.com.ar/papel-higienico-doble-hoja-higienol-plus-30-mts-18-uni-761669/p"
                  }
     },                                                   
@@ -930,6 +984,8 @@ URLS = {
         "categoria": "Limpieza",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/papel-higi%C3%A9nico-felpita-doble-hoja-paquete-4-unidades/_/R-00467248-00467248-200?Dy=1",
+                # "Dia": "",
+                # "Jumbo": "",
                  "Carrefour": "https://www.carrefour.com.ar/papel-higienico-doble-hoja-felpita-infinity-4-u-x-30-m/p"
                  }
     },                                            
@@ -938,7 +994,10 @@ URLS = {
         "unidad": "4 Unidades x 30 mts",        
         "categoria": "Limpieza",
         "urls": {
-                "Jumbo":"https://www.jumbo.com.ar/papel-higienico-doble-hoja-4x30-m-family-care-mp-2/p"
+                "Jumbo":"https://www.jumbo.com.ar/papel-higienico-doble-hoja-4x30-m-family-care-mp-2/p",
+                # "Dia": "",
+                # "Jumbo": "",
+                # "Carrefour": ""
                  }
     },                                            
         "higienico_dia": {
@@ -946,7 +1005,10 @@ URLS = {
         "unidad": "4 Unidades x 30 mts",        
         "categoria": "Limpieza",
         "urls": {
-                "Dia":"https://diaonline.supermercadosdia.com.ar/papel-higienico-doble-hoja-30-mts-4-ud-16949/p"
+                "Dia":"https://diaonline.supermercadosdia.com.ar/papel-higienico-doble-hoja-30-mts-4-ud-16949/p",
+                # "Dia": "",
+                # "Jumbo": "",
+                # "Carrefour": ""
                  }
     },                                            
         "higienico_dia_grande": {
@@ -954,7 +1016,10 @@ URLS = {
         "unidad": "6 Unidades x 30 mts",        
         "categoria": "Limpieza",
         "urls": {
-                "Dia":"https://diaonline.supermercadosdia.com.ar/papel-higienico-doble-hoja-30mts-6-ud-834/p"
+                "Dia":"https://diaonline.supermercadosdia.com.ar/papel-higienico-doble-hoja-30mts-6-ud-834/p",
+                # "Dia": "",
+                # "Jumbo": "",
+                # "Carrefour": ""
                  }
     },                                            
         "higienico_carrefour": {
@@ -962,7 +1027,10 @@ URLS = {
         "unidad": "6 Unidades x 30 mts",        
         "categoria": "Limpieza",
         "urls": {
-                "Carrefour":"https://www.carrefour.com.ar/papel-higienico-doble-hoja-carrefour-essential-4-x-30-mts-597038/p"
+                "Carrefour":"https://www.carrefour.com.ar/papel-higienico-doble-hoja-carrefour-essential-4-x-30-mts-597038/p",
+                # "Dia": "",
+                # "Jumbo": "",
+                # "Carrefour": ""
                  }
     },                                            
         "higienico_carrefour_decorado": {
@@ -970,7 +1038,10 @@ URLS = {
         "unidad": "6 Unidades x 50 mts",        
         "categoria": "Limpieza",
         "urls": {
-                "Carrefour":"https://www.carrefour.com.ar/papel-higienico-doble-hoja-deco-carrefour-essential-50-mts-x-4-uni/p"
+                "Carrefour":"https://www.carrefour.com.ar/papel-higienico-doble-hoja-deco-carrefour-essential-50-mts-x-4-uni/p",
+                # "Dia": "",
+                # "Jumbo": "",
+                # "Carrefour": ""
                  }
     },                                            
         "higienico_noble": {
@@ -978,7 +1049,10 @@ URLS = {
         "unidad": "4 Unidades x 30 mts",        
         "categoria": "Limpieza",
         "urls": {
-                "Carrefour":"https://www.carrefour.com.ar/papel-higienico-noble-doble-hoja-30-mts-4-uni-751386/p"
+                "Carrefour":"https://www.carrefour.com.ar/papel-higienico-noble-doble-hoja-30-mts-4-uni-751386/p",
+                # "Dia": "",
+                # "Jumbo": "",
+                # "Carrefour": ""
                  }
     },                                            
         "higienico_elegante": {
@@ -986,7 +1060,10 @@ URLS = {
         "unidad": "4 Unidades x 30 mts",        
         "categoria": "Limpieza",
         "urls": {
-                "Carrefour":"https://www.carrefour.com.ar/papel-higienico-doble-hoja-elegante-4-x-30-m-628282/p"
+                "Carrefour":"https://www.carrefour.com.ar/papel-higienico-doble-hoja-elegante-4-x-30-m-628282/p",
+                # "Dia": "",
+                # "Jumbo": "",
+                # "Carrefour": ""
                  }
     },                                            
         "higienico_elegante_rinde": {
@@ -994,7 +1071,11 @@ URLS = {
         "unidad": "4 Unidades x 30 mts",        
         "categoria": "Limpieza",
         "urls": {
-                "Carrefour":"https://www.carrefour.com.ar/papel-higienico-elegante-hoja-doble-rindemas-30-mts-x-4-uni-702838/p"
+                "Carrefour":"https://www.carrefour.com.ar/papel-higienico-elegante-hoja-doble-rindemas-30-mts-x-4-uni-702838/p",
+                # "Dia": "",
+                # "Jumbo": "",
+                # "Carrefour": ""
+                
                  }
     },                                           
         "rollo_cocina_campanita": {
@@ -1002,7 +1083,12 @@ URLS = {
         "unidad": "2",        
         "categoria": "Limpieza",
         "urls": {
-                "Coto":"https://www.cotodigital.com.ar/sitios/cdigi/productos/rollo-de-cocina-campanita-100-pa%C3%B1os-paquete-2-unidades/_/R-00272112-00272112-200?Dy=1"
+                "Coto":"https://www.cotodigital.com.ar/sitios/cdigi/productos/rollo-de-cocina-campanita-100-pa%C3%B1os-paquete-2-unidades/_/R-00272112-00272112-200?Dy=1",
+                # "Dia": "",
+                # "Jumbo": "",
+                # "Carrefour": ""
+                
+
                  }
     },                                           
         "rollo_cocina_sussex": {
@@ -1021,6 +1107,10 @@ URLS = {
         "categoria": "Limpieza",
         "urls": {
                 "Coto":"https://www.cotodigital.com.ar/sitios/cdigi/productos/rollo-de-cocina-sussex-ultra-60-pa%C3%B1os-3-un/_/R-00580697-00580697-200?Dy=1",
+                # "Dia": "",
+                # "Jumbo": "",
+                # "Carrefour": ""
+                
                 
                  }
     },                                         
@@ -1030,6 +1120,10 @@ URLS = {
         "categoria": "Limpieza",
         "urls": {
                 "Jumbo":"https://www.jumbo.com.ar/rollo-de-cocina-ultra-100-panos-3-un-sussex/p",
+                # "Dia": "",
+                # "Jumbo": "",
+                # "Carrefour": ""
+                
                 
                  }
     }
