@@ -61,14 +61,22 @@ def filtrar_por_categoria(url, categoria):
 def obtener_precio(page, url):
     try:
         page.goto(url, timeout=60000)
-        page.wait_for_load_state("networkidle")  # ⏳ espera que todo se cargue
+
+        try:            
+            page.wait_for_load_state("networkidle")  # ⏳ espera que todo se cargue
+        except Exception as e:
+            print("Falla Workidle")
+            page.wait_for_load_state("load")      
+
+        
         titulo = None
         selectores_titulo = [
             'h2.title.text-dark',
             'h1.vtex-store-components-3-x-productNameContainer',
             'span.vtex-store-components-3-x-productBrand.vtex-store-components-3-x-productBrand--productNamePdp',
             'span.vtex-store-components-3-x-productBrand ',
-            'span.vtex-store-components-3-x-productBrand.vtex-store-components-3-x-productBrand--quickview'
+            'span.vtex-store-components-3-x-productBrand.vtex-store-components-3-x-productBrand--quickview',
+            'span.vtex-store-components-3-x-productBrand--quickview'
         ]
         errores_titulo = []  # lista para registrar errores por selector
         for selector in selectores_titulo:
@@ -191,6 +199,10 @@ def extract(debug_export=True, debug_format=False, debug_info=False, categoria=N
         print("📏 Generando métricas particulares...")
         df = generar_metricas(df)
         print("✅ Métricas generadas")
+        
+        if debug_info:
+            print(df)
+
     except Exception as e:
         print(f"No se pudo generar las metricas. Error: {e}")
         log_error(f"No se pudo generar las metricas. Error: {e}")
