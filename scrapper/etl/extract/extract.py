@@ -19,15 +19,7 @@ CREDENTIALS_PATH = os.environ.get("GSHEET_CREDENTIALS_PATH", "credentials.json")
 CREDENTIALS_PATH = os.path.abspath(CREDENTIALS_PATH)
 
 
-
-try:
-    FOLDER_ID = os.environ["DRIVE_FOLDER_ID"]
-except KeyError:
-    try:
-        from config.folder import FOLDER_ID
-    except ImportError:
-        raise Exception("❌ No se encontró FOLDER_ID ni como variable de entorno ni en folder.py")
-
+FOLDER_ID = os.environ["DRIVE_FOLDER_ID"]
 
 
 from etl.load.load import guardar_localmente, subir_df_a_google_sheet
