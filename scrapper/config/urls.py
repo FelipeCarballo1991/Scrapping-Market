@@ -1096,20 +1096,21 @@ URLS = {
         "unidad": "3",        
         "categoria": "Limpieza",
         "urls": {
-                "Coto":"https://www.cotodigital.com.ar/sitios/cdigi/productos/rollo-de-cocina-campanita-100-pa%C3%B1os-paquete-2-unidades/_/R-00272112-00272112-200?Dy=1",
+                "Coto":"https://www.cotodigital.com.ar/sitios/cdigi/productos/rollo-cocina-sussex-cl%C3%A1sico-50-pa%C3%B1os-3-un/_/R-00562930-00562930-200?Dy=1&idSucursal=200",
                 "Jumbo": "https://www.jumbo.com.ar/rollo-cocina-clasico-50-panos-3-un-sussex/p",
-                "Dia": "https://diaonline.supermercadosdia.com.ar/rollo-cocina-sussex-clasico-50-panos-3-ud-88515/p"
+                "Dia": "https://diaonline.supermercadosdia.com.ar/rollo-cocina-sussex-clasico-50-panos-3-ud-88515/p",
+                "Carrefour": "https://www.carrefour.com.ar/rollo-de-cocina-sussex-clasico-50-panos-3-uni-719939/p"
                  }
     },                                           
         "rollo_cocina_sussex2": {
-        "nombre": "Rollo Cocina Sussex 60 panios",        
+        "nombre": "Rollo Cocina Sussex 180 panios",        
         "unidad": "3",        
         "categoria": "Limpieza",
         "urls": {
                 "Coto":"https://www.cotodigital.com.ar/sitios/cdigi/productos/rollo-de-cocina-sussex-ultra-60-pa%C3%B1os-3-un/_/R-00580697-00580697-200?Dy=1",
                 # "Dia": "",
                 # "Jumbo": "",
-                # "Carrefour": ""
+                # "Carrefour": "https://www.carrefour.com.ar/rollo-de-cocina-sussex-ultra-60-panos-3-uni-735468/p"
                 
                 
                  }
@@ -1121,8 +1122,8 @@ URLS = {
         "urls": {
                 "Jumbo":"https://www.jumbo.com.ar/rollo-de-cocina-ultra-100-panos-3-un-sussex/p",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/rollo-de-cocina-ultra-100-panos-3-un-sussex/p",
+                "Carrefour": "https://www.carrefour.com.ar/rollo-de-cocina-sussex-ultra-100-panos-3-uni-578816/p"
                 
                 
                  }
