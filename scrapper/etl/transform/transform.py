@@ -23,6 +23,21 @@ def generar_metricas(df):
     # Calcular el precio por unidad sólo para los valores numéricos
     df['precio_por_unidad'] = round(df['precio'] / df['Unidad_num'],2)
 
+    #UNO EN UNA COLUMNA LOS RESULTADOS PARA EVALUAR CUAL ES MAS BARATO
+    df["resultado_final"] = df[["precio_por_unidad", "precio_metro", "precio_panio_cocina"]].bfill(axis=1).iloc[:, 0]
+
+
+    df_baratos = df[df['resultado_unico'] == df.groupby('clave_config')['resultado_final'].transform('min')]
+
+    df_baratos = df_baratos[['fecha', 
+                            'clave_config',     
+                            "precio", 
+                            'supermercado', 
+                            'categoria', 
+                            'url'
+                            ]]
+
+
 
 
     df = df[['fecha', 
@@ -33,6 +48,7 @@ def generar_metricas(df):
             'precio_por_unidad',
             'precio_metro',
             'precio_panio_cocina',
+            "resultado_final",
             'supermercado', 
             'categoria',    
             # 'cant_unidades', 

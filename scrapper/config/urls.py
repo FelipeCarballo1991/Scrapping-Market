@@ -11,10 +11,10 @@ URLS_DEBUG = {
         "unidad": "1",        
         "categoria": "Verdura",
         "urls": {
-                "Carrefour": "https://www.carrefour.com.ar/papel-higienico-doble-hoja-higienol-plus-x4-30-mts-736162/p",
-                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/ojo-de-bife-coto-xkg/_/R-00029810-00029810-200?Dy=1",
-                "Jumbo":"https://www.jumbo.com.ar/rollo-de-cocina-ultra-100-panos-3-un-sussex/p",
-                "Dia":"https://diaonline.supermercadosdia.com.ar/queso-crema-clasico-casancrem-500-gr-2797/p",
+                "Carrefour": "https://www.carrefour.com.ar/naranja-de-jugo-x-kg-8314/p",
+                # "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/ojo-de-bife-coto-xkg/_/R-00029810-00029810-200?Dy=1",
+                # "Jumbo":"https://www.jumbo.com.ar/rollo-de-cocina-ultra-100-panos-3-un-sussex/p",
+                # "Dia":"https://diaonline.supermercadosdia.com.ar/queso-crema-clasico-casancrem-500-gr-2797/p",
 
                 }
 }
@@ -27,6 +27,10 @@ URLS = {
         "categoria": "Carnes",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/bife-americano-x-kg/_/R-00041414-00041414-200?Dy=1",
+                # "Dia": "",
+                "Jumbo": "https://www.jumbo.com.ar/paleta-americano-la-hacienda/p",
+                "Carrefour": "https://www.carrefour.com.ar/bife-americano-novillito-x-kg-678556/p"
+                
                 }
     },
     "ojo_bife": {
@@ -37,7 +41,7 @@ URLS = {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/ojo-de-bife-coto-xkg/_/R-00029810-00029810-200?Dy=1",
                 # "Dia": "",
                 # "Jumbo": "",
-                # "Carrefour": ""
+                "Carrefour": "https://www.carrefour.com.ar/ojo-de-bife-novillito-x-kg-57289/p"
                 
                 }
     },
@@ -47,6 +51,9 @@ URLS = {
         "categoria": "Carnes",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/bife-de-chorizo-coto-xkg/_/R-00029804-00029804-200?Dy=1",
+                # "Dia": "",
+                "Jumbo": "https://www.jumbo.com.ar/bife-de-chorizo-4/p",
+                "Carrefour": "https://www.carrefour.com.ar/bife-de-chorizo-novillito-x-kg-662854/p"
                 }
     },    
     "cuadril": {
@@ -55,6 +62,9 @@ URLS = {
         "categoria": "Carnes",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/cuadril-selecci%C3%B3n-x-kg/_/R-00042317-00042317-200?Dy=1",
+                # "Dia": "",
+                # "Jumbo": "",
+                "Carrefour": "https://www.carrefour.com.ar/cuadril-novillito-x-kg-662857/p"
                 }
     },
         "picada_desgrasada": {
@@ -65,7 +75,7 @@ URLS = {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/picada-desgrasada-estancias-coto-x-kg/_/R-00048124-00048124-200?Dy=1",
                 # "Dia": "",
                 # "Jumbo": "",
-                # "Carrefour": ""
+                "Carrefour": "https://www.carrefour.com.ar/picada-tartare-etiqueta-negra-x-kg-678598/p"         
                 
                 }
     },
@@ -75,6 +85,9 @@ URLS = {
         "categoria": "Carnes",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/bola-de-lomo-estancias-coto-x-kg/_/R-00047993-00047993-200?Dy=1",
+                # "Dia": "",
+                "Jumbo": "https://www.jumbo.com.ar/milanesa-bola-de-lomo-la-hacienda/p",
+                "Carrefour": "https://www.carrefour.com.ar/milanesa-de-bola-de-lomo-novillito-x-kg-662861/p"
                 }
     },
         "nalga": {
@@ -83,6 +96,9 @@ URLS = {
         "categoria": "Carnes",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/nalga-estancias-coto-x-kg/_/R-00047991-00047991-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
+                # "Dia": "",
+                # "Jumbo": "",
+                "Carrefour": "https://www.carrefour.com.ar/milanesa-de-nalga-novillito-x-kg-722862/p" 
                 }
     },
         "peceto": {
@@ -91,6 +107,9 @@ URLS = {
         "categoria": "Carnes",
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/peceto-feteado-x-kg/_/R-00041407-00041407-200?Dy=1",
+                # "Dia": "",
+                # "Jumbo": "",
+                "Carrefour": "https://www.carrefour.com.ar/peceto-feteado-novillito-x-kg-678567/p" 
                 }
     },
         "paleta": {
@@ -100,8 +119,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/paleta-del-centro-estancias-coto-x-kg/_/R-00047984-00047984-200?Dy=1",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/milanesa-bola-de-lomo-la-hacienda/p",
+                "Carrefour": "https://www.carrefour.com.ar/paleta-novillito-x-kg-662865/p"
                 
                 }
     },
@@ -112,8 +131,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/roast-beef-estancias-coto-x-kg/_/R-00047985-00047985-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/roast-beef-churrasco/p",
+                "Carrefour": "https://www.carrefour.com.ar/roast-beef-novillito-x-kg-662867/p"
                 
                 }
     },
@@ -137,7 +156,33 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/pollo-congelado-x-kg/_/R-00042989-00042989-200?Dy=1",
                 # "Dia": "",
-                # "Jumbo": "",
+                "Jumbo": "https://www.jumbo.com.ar/pollo-fresco-con-menudos-2/p",
+                # "Carrefour": "https://www.carrefour.com.ar/pollo-entero-congelado-x-kg-699692/p"
+                
+                }
+    },
+        
+        "pechuga": {
+        "nombre": "Pechuga",        
+        "unidad": "1",        
+        "categoria": "Carnes",
+        "urls": {
+                # "Coto": "",
+                # "Dia": "",
+                "Jumbo": "https://www.jumbo.com.ar/suprema-de-pollo-granel-fresca/p",
+                # "Carrefour": ""
+                
+                }
+    },    
+        
+        "pata_muslo": {
+        "nombre": "Pata Muslo",        
+        "unidad": "1",        
+        "categoria": "Carnes",
+        "urls": {
+                # "Coto": "",
+                # "Dia": "",
+                "Jumbo": "https://www.jumbo.com.ar/cuarto-trasero-de-pollo-granel-fresco/p",
                 # "Carrefour": ""
                 
                 }
@@ -149,8 +194,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/carr%C3%A9-de-cerdo-x-kg/_/R-00017162-00017162-200?Dy=1",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/carre-de-cerdo-con-hueso-fresco-2/p",
+                "Carrefour": "https://www.carrefour.com.ar/carre-de-cerdo-con-hueso-x-kg-687687/p"
                 
                 }
     },    
@@ -161,8 +206,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/bondiola-de-cerdo-x-kg/_/R-00000943-00000943-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/bondiola-de-cerdo-fresca-x-kg-2-2/p",
+                "Carrefour": "https://www.carrefour.com.ar/bondiola-de-cerdo-x-kg--687691/p"
                 
                 }
     },     
@@ -173,8 +218,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/papa-negra-selecci%C3%B3n-x-kg/_/R-00060947-00060947-200?Dy=1",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/papa-negra-por-kg/p",
+                "Carrefour": "https://www.carrefour.com.ar/papa-x-kg-9278/p"
                 
                 }
     },    
@@ -185,8 +230,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/cebolla-a-granel-x-kg/_/R-00000602-00000602-200?Dy=1",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/cebolla-superior-por-kg/p",
+                "Carrefour": "https://www.carrefour.com.ar/cebolla-x-kg/p"
                 
                 }
     },    
@@ -198,7 +243,7 @@ URLS = {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/coliflor-x-kg/_/R-00000619-00000619-200?Dy=1",
                 # "Dia": "",
                 # "Jumbo": "",
-                # "Carrefour": ""
+                "Carrefour": "https://www.carrefour.com.ar/coliflor-x-kg/p"
                 
                 }
     },    
@@ -209,8 +254,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/repollo-colorado-x-kg/_/R-00000680-00000680-200?Dy=1",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/repollo-colorado-por-kg/p",
+                "Carrefour": "https://www.carrefour.com.ar/repollo-colorado-x-kg/p"
                 
                 }
     }, 
@@ -221,8 +266,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/repollo-blanco-x-kg/_/R-00000678-00000678-200?Dy=1",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/repollo-4-2/p",
+                "Carrefour": "https://www.carrefour.com.ar/repollo-blanco-x-kg/p"
                 
                 }
     },    
@@ -233,8 +278,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/zanahoria-seleccion-xkg/_/R-00000686-00000686-200?Dy=1",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/zanahoria-por-kg/p",
+                "Carrefour": "https://www.carrefour.com.ar/zanahoria-x-kg-630573/p"
                 
                 }
     },
@@ -246,8 +291,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/perejil-x-uni/_/R-00047599-00047599-200?Dy=1",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/perejil-por-u/p",
+                "Carrefour": "https://www.carrefour.com.ar/perejil-x-1-atado/p"
                 
                 }
     },             
@@ -258,8 +303,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/lechuga-mantecosa-x-kg/_/R-00000424-00000424-200?Dy=1",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/lechuga-mantecosa-por-kg/p",
+                "Carrefour": "https://www.carrefour.com.ar/lechuga-mantecosa-x-kg/p"
                 
                 }
     }, 
@@ -271,8 +316,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/lechuga-capuchina-x-kg/_/R-00000648-00000648-200?Dy=1",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/lechuga-capuchina-por-kg/p",
+                "Carrefour": "https://www.carrefour.com.ar/lechuga-capuchina-x-kg/p"
                 
                 }   
     },             
@@ -284,7 +329,7 @@ URLS = {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/lechuga-criolla-x-kg/_/R-00000649-00000649-200?Dy=1",
                 # "Dia": "",
                 # "Jumbo": "",
-                # "Carrefour": ""
+                "Carrefour": "https://www.carrefour.com.ar/lechuga-criolla-x-kg/p"
                 
                 }
     },             
@@ -295,8 +340,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/lechuga-francesa-x-kg/_/R-00000650-00000650-200?Dy=1",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/lechuga-francesa-por-kg/p",
+                "Carrefour": "https://www.carrefour.com.ar/lechuga-francesa-x-kg-1/p"
                 
                 }
     },             
@@ -307,8 +352,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/brocoli-x-kg/_/R-00000598-00000598-200",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/brocoli/p",
+                "Carrefour": "https://www.carrefour.com.ar/brocoli-x-kg/p"
                 
                 }
     },             
@@ -319,8 +364,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/jengibre-x-kg/_/R-00092926-00092926-200",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/jengibre-por-kg/p",
+                "Carrefour": "https://www.carrefour.com.ar/raiz-de-jengibre-x-kg/p"
                 
                 }
     },             
@@ -331,8 +376,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/pimiento-rojo-xkg/_/R-00000671-00000671-200?Dy=1",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/pimiento-rojo-superior-2/p",
+                "Carrefour": "https://www.carrefour.com.ar/pimiento-rojo-x-kg-2/p"
                 
                 }
     },             
@@ -343,8 +388,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/zapallo-anco-x-kg/_/R-00000688-00000688-200?Dy=1",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/zapallo-coreano-por-kg/p",
+                "Carrefour": "https://www.carrefour.com.ar/zapallo-anco-x-kg/p"
                 
                 }
     },             
@@ -355,8 +400,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/remolacha-x-kg/_/R-00000677-00000677-200",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/remolacha-por-kg/p",
+                "Carrefour": "https://www.carrefour.com.ar/remolacha-x-kg/p"
                 
                 }
     },             
@@ -367,8 +412,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/tomate-red-x-kg/_/R-00000684-00000684-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/tomate-redondo-grande-por-kg/p",
+                "Carrefour": "https://www.carrefour.com.ar/tomate-redondo-en-racimo-huella-natural-x-kg/p"
                 
                 }
     },             
@@ -379,8 +424,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/tomate-perit-xkg/_/R-00000683-00000683-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/tomate-perita-por-kg/p",
+                "Carrefour": "https://www.carrefour.com.ar/tomate-perita-x-kg/p"
                 
                 }
     },                 
@@ -392,7 +437,7 @@ URLS = {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/espinaca-congelada-granja-del-sol-1kg/_/R-00565167-00565167-200?Dy=1",
                 # "Dia": "",
                 # "Jumbo": "",
-                # "Carrefour": ""
+                "Carrefour": "https://www.carrefour.com.ar/espinaca-congelada-granja-del-sol-en-bolsa-1-kg-720850/p"
                 
                 }
     },                 
@@ -403,8 +448,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/espinaca-congelada-lucchetti-400g/_/R-00565182-00565182-200?Dy=1",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/espinaca-lucchetti-400-gr/p",
+                "Carrefour": "https://www.carrefour.com.ar/espinaca-lucchetti-en-bolsa-400-g-720853/p"
                 
                 }
     },               
@@ -415,8 +460,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/banana-cavendish-x-kg/_/R-00000446-00000446-200?Dy=1",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/banana-ecuador-x-kg/p",
+                "Carrefour": "https://www.carrefour.com.ar/banana-seleccion-x-kg-719074/p"
                 
                 }
     },             
@@ -427,8 +472,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/naranja-jugo-xkg/_/R-00061005-00061005-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/naranja-para-jugo-por-kg/p",
+                "Carrefour": "https://www.carrefour.com.ar/naranja-de-jugo-x-kg-8314/p"
                 
                 }
     },                 
@@ -439,8 +484,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/uva-red-globe-xkg/_/R-00000861-00000861-200?Dy=1&assemblerContentCollection=%2Fcontent%2FShared%2FAuto-Suggest%20Panels",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/uva-red-globe-x-kg/p",
+                "Carrefour": "https://www.carrefour.com.ar/uva-rosada-x-kg/p"
                 
                 }
     },                     
@@ -451,8 +496,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/manzana-comercial-x-kg/_/R-00061002-00061002-200?Dy=1",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/manzana-red-delicius-por-kg/p",
+                "Carrefour": "https://www.carrefour.com.ar/manzana-red-x-kg-432782/p"
                 
                 }
     },                     
@@ -463,8 +508,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/manzana-red-elegida-x-kg/_/R-00000528-00000528-200?Dy=1",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/manzana-elegida-por-kg/p",
+                "Carrefour": "https://www.carrefour.com.ar/manzana-roja-huella-natural-x-kg/p"
                 
                 }
     },                       
@@ -475,8 +520,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/manzana-g-smith-xkg/_/R-00000527-00000527-200?Dy=1",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/manzana-gran-smith-x-kg/p",
+                "Carrefour": "https://www.carrefour.com.ar/manzana-granny-especial-x-kg-61585/p"
                 
                 }
     },                             
@@ -487,8 +532,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/mandarina-criolla-xkg/_/R-00000501-00000501-200?Dy=1",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/mandarina-criolla-1-kg/p",
+                "Carrefour": "https://www.carrefour.com.ar/mandarina-x-kg/p"
                 
                 }
     },                           
@@ -499,8 +544,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/mandarina-nova-x-kg/_/R-00000204-00000204-200?Dy=1",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/mandarina-nova-x-kg/p",
+                "Carrefour": "https://www.carrefour.com.ar/mandarina-nova-huella-natural-x-kg/p"
                 
                 }
     },                      
@@ -511,8 +556,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/limon-comercia-xkg/_/R-00061007-00061007-200?Dy=1",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/limon-x-kg/p",
+                "Carrefour": "https://www.carrefour.com.ar/limon-comercial-x-kg/p"
                 
                 }
     },                         
@@ -523,8 +568,8 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/kiwi-selecci%C3%B3n-x-kg/_/R-00000496-00000496-200?Dy=1",
                 # "Dia": "",
-                # "Jumbo": "",
-                # "Carrefour": ""
+                "Jumbo": "https://www.jumbo.com.ar/kiwi-elegido-x-kg/p",
+                "Carrefour": "https://www.carrefour.com.ar/kiwi-huella-natural-x-kg/p"
                 
                 }
     },                             
@@ -571,7 +616,7 @@ URLS = {
         "urls": {
                 "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/nuez-grande-c-cascar-xkg/_/R-00017749-00017749-200?Dy=1",
                 # "Dia": "",
-                # "Jumbo": "",
+                "Jumbo": "https://www.jumbo.com.ar/nuez-con-cascara-premium-por-kg/p",
                 # "Carrefour": ""
                 
                 }
