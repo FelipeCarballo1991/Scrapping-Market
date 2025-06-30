@@ -50,7 +50,10 @@ def log_error(msg):
 
 # Filtro por categoría
 def filtrar_por_categoria(url, categoria):
-    filtrados = {k: v for k, v in url.items() if v['categoria'] == categoria}
+    lista_categoria = categoria.split(",")
+    lista_categoria = [str(x).lower() for x in lista_categoria]
+
+    filtrados = {k: v for k, v in url.items() if str(v['categoria']).lower() in(lista_categoria)}
     if filtrados:
         return filtrados
     else:
