@@ -200,7 +200,7 @@ def extract(debug_export=True, debug_format=False, debug_info=False, categoria=N
         ])
         print(f"Cantidad de productos scrapeados: {df['clave_config'].nunique()}")
         print("📏 Generando métricas particulares...")
-        df = generar_metricas(df)
+        df,df_baratos = generar_metricas(df)
         print("✅ Métricas generadas")
         
         if debug_info:
@@ -214,12 +214,33 @@ def extract(debug_export=True, debug_format=False, debug_info=False, categoria=N
     
 
     if debug_export:
-        guardar_localmente(df, PATH, formato_csv=debug_format)
+        guardar_localmente(df, 
+                           PATH, 
+                           formato_csv=debug_format)
+        
+        guardar_localmente(df_baratos, 
+                           PATH+"_BARATOS", 
+                           formato_csv=debug_format)
 
     if debug_drive:
-        nombre_hoja = f"Precios_{FECHA_COMPLETA}"
+        nombre_hoja = f"Precios_{FECHA}"
         # ruta_credenciales = os.path.join(os.path.dirname(__file__), "credentials.json")
-        subir_df_a_google_sheet(df, nombre_hoja, FOLDER_ID, CREDENTIALS_PATH)
+        # subir_df_a_google_sheet(df, nombre_hoja, FOLDER_ID, CREDENTIALS_PATH)
+
+        # Sube el resultado completo
+        subir_df_a_google_sheet(df, 
+                                nombre_hoja, 
+                                FOLDER_ID, 
+                                CREDENTIALS_PATH,
+                                nombre_worksheet='Sheet1')
+
+        # Sube los precios ideales (más baratos)
+        subir_df_a_google_sheet(df_baratos, 
+                                nombre_hoja, 
+                                FOLDER_ID, 
+                                CREDENTIALS_PATH, 
+                                nombre_worksheet='Sheet2')
+
 
     print("--------------------------------------------------------------------------")
     print(f"⏳ FIN DE EJECUCION: {datetime.now().strftime('%H:%M:%S')}")

@@ -27,7 +27,7 @@ def generar_metricas(df):
     df["resultado_final"] = df[["precio_por_unidad", "precio_metro", "precio_panio_cocina"]].bfill(axis=1).iloc[:, 0]
 
 
-    df_baratos = df[df['resultado_unico'] == df.groupby('clave_config')['resultado_final'].transform('min')]
+    df_baratos = df[df['resultado_final'] == df.groupby('clave_config')['resultado_final'].transform('min')]
 
     df_baratos = df_baratos[['fecha', 
                             'clave_config',     
@@ -36,9 +36,6 @@ def generar_metricas(df):
                             'categoria', 
                             'url'
                             ]]
-
-
-
 
     df = df[['fecha', 
             'clave_config', 
@@ -62,7 +59,7 @@ def generar_metricas(df):
             'url', ]]
      
         
-    return df
+    return df,df_baratos
 
 
 # Ejecución

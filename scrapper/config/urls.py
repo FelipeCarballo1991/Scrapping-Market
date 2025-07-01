@@ -1,15 +1,15 @@
 from datetime import datetime
 import pandas as pd
 
-FECHA = datetime.now().strftime("%Y-%m-%d")
+FECHA = datetime.now().strftime("%d-%m-%Y")
 FECHA_COMPLETA = datetime.now().strftime("%Y-%m-%d_%H:%M_%S")
 
 
 URLS_DEBUG = {
-     "brocoli": {
-        "nombre": "Brocoli",        
+     "naranja_jugo": {
+        "nombre": "Naranja Jugo",        
         "unidad": "1",        
-        "categoria": "Verdura",
+        "categoria": "Fruta",
         "urls": {
                 "Carrefour": "https://www.carrefour.com.ar/naranja-de-jugo-x-kg-8314/p",
                 # "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/ojo-de-bife-coto-xkg/_/R-00029810-00029810-200?Dy=1",
@@ -17,7 +17,31 @@ URLS_DEBUG = {
                 # "Dia":"https://diaonline.supermercadosdia.com.ar/queso-crema-clasico-casancrem-500-gr-2797/p",
 
                 }
-}
+        },"bife_americano": {
+        "nombre": "Bife Americano",        
+        "unidad": "1",        
+        "categoria": "Carnes",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/bife-americano-x-kg/_/R-00041414-00041414-200?Dy=1",
+                # "Dia": "",
+                "Jumbo": "https://www.jumbo.com.ar/paleta-americano-la-hacienda/p",
+                "Carrefour": "https://www.carrefour.com.ar/bife-americano-novillito-x-kg-678556/p"
+                
+                }
+        },                                            
+        "casancrem_grande": {
+        "nombre": "Casancrem 500 gr",        
+        "unidad": "0.5",        
+        "categoria": "Lacteo",
+        "urls": {
+                "Coto": "https://www.cotodigital.com.ar/sitios/cdigi/productos/queso-crema-cl%C3%A1sico-casancrem-500gr/_/R-00592566-00592566-200?Dy=1",
+                "Dia": "https://diaonline.supermercadosdia.com.ar/queso-crema-clasico-casancrem-500-gr-2797/p",
+                "Jumbo": "https://www.jumbo.com.ar/queso-crema-clasico-500-gr-casancrem/p",
+                "Carrefour": "https://www.carrefour.com.ar/queso-crema-casancrem-clasico-500-grs-748003/p"
+                }
+    }
+        
+
 }
 
 URLS = {
