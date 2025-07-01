@@ -2,7 +2,7 @@ name: Scraping Diario + Exportar a Google Sheets
 
 on:
   schedule:
-    - cron: "0 10 * * *"  # Todos los días a las 9:00 UTC → 9:00 AM Argentina
+    - cron: "0 8 * * *"  # Todos los días a las 9:00 UTC → 9:00 AM Argentina
   workflow_dispatch:
 
 jobs:
